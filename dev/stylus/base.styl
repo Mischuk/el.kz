@@ -1,0 +1,225 @@
+/*! Base styles */
+html, body
+  height 100%
+html
+  color $black
+  font-family 'Ubuntu', serif
+  font(400, 13px, 1)
+.container
+  min-height 100%
+.wrapper
+  width auto
+  position relative
+  margin 0 auto
+  height 100%
+header
+  height 70px
+  padding-left 130px
+main
+  float left
+  width 100%
+  .content
+    margin 0 0 0 135px
+.fixed-nav
+  position fixed
+  left 0
+  top 0
+  width 80px
+  height 100%
+  background-color $blue-dark
+.sidebar
+  float right
+  width 270px
+  margin-left -270px
+.sidebar + main .content
+  margin 0 270px 0 80px
+.wr
+  padding 0 45px
+  margin-bottom 45px
+/*!=================
+  Basic elements
+====================*/
+img
+  display inline-block
+  vertical-align middle
+  max-width 100%
+  max-height 100%
+  width auto
+  height auto
+.inp-textarea, textarea
+  max-height 400px
+  max-width 100%
+::-moz-selection
+  background-color #000
+  color #fff
+::selection
+  background-color #000
+  color #fff
+main
+  .headling
+    font-weight 500
+    text-transform uppercase
+    color #424242
+    font-size 18px
+    line-height 1
+    margin-bottom 30px
+.owl-prev,
+.owl-next,
+.flipster__button--prev,
+.flipster__button--next
+    width 20px
+    height 20px
+    position absolute
+    top -45px
+    border 1px solid $gray-bd
+    background-color #e8f0f4
+    text-indent -9999px
+    border-radius 50%
+    anim()
+    &:after
+      content ''
+      position absolute
+      left 50%
+      top 50%
+      width: 4px;
+      height: 7px;
+      margin-left -(@width/2)
+      margin-top -4px
+    &:hover
+      background-color #24c2cb
+      border-color #24c2cb
+.flipster__button--prev,
+.flipster__button--next
+  top 5px
+.owl-next,
+.flipster__button--next
+  right 0
+  &:after
+    background: url('../images/sprite.png') no-repeat -151px -9px
+.owl-prev,
+.flipster__button--prev
+  right 30px
+  &:after
+    background: url('../images/sprite.png') no-repeat -140px -9px
+
+/*!=================
+  Extended styles
+====================*/
+.online-icon
+  content ''
+  position absolute
+  right 0
+  top 0
+  width 14px
+  height 14px
+  border-radius 50%
+  background-color $online
+  border 2px solid $gray-bg
+  z-index 30
+.online-icon-white
+  content ''
+  position absolute
+  right 0
+  top 0
+  width 14px
+  height 14px
+  border-radius 50%
+  background-color $online
+  border 2px solid #fff
+  z-index 30
+.busy-icon
+  content ''
+  position absolute
+  right 0
+  top 0
+  width 14px
+  height 14px
+  border-radius 50%
+  background-color $red
+  border 2px solid #fff
+  z-index 30
+.user
+  position relative
+  width 45px
+  height 45px
+  border 1px solid #24c2cb
+  border-radius 50%
+  &.online
+    &:after
+      @extends .online-icon
+  &.busy
+    &:after
+      @extends .busy-icon
+  &.no-pic-female a
+    &:after
+      content ''
+      background: url('../images/sprite.png') no-repeat -471px -53px;
+      width: 21px;
+      height: 21px;
+      position absolute
+      left 50%
+      top 50%
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+  &.no-pic-male a
+    &:after
+      content ''
+      background: url('../images/sprite.png') no-repeat -444px -53px;
+      width: 20px;
+      height: 20px;
+      position absolute
+      left 50%
+      top 50%
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+  a
+    display block
+    width 100%
+    height 100%
+    background-repeat no-repeat
+    background-position 50% 50%
+    border-radius 50%
+.viewed-icon,
+.comments-icon,
+.likes-icon
+  position relative
+  cursor default
+  display inline-block
+  margin-right 15px
+.viewed-icon
+  padding-left 20px
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -296px -24px;
+    width: 16px;
+    height: 9px;
+    position absolute
+    left 0
+    top 50%
+    margin-top -(@height/2)
+  &.gray:after
+    background-position -318px -24px
+.comments-icon
+  padding-left 15px
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -137px -24px;
+    width: 10px;
+    height: 10px;
+    position absolute
+    left 0
+    top 50%
+    margin-top -(@height/2)
+  &.gray:after
+    background-position -339px -24px
+.likes-icon
+  padding-left 16px
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -120px -24px;
+    width: 12px;
+    height: 10px;
+    position absolute
+    left 0
+    top 50%
+    margin-top -(@height/2)

@@ -1,0 +1,542 @@
+@media screen and (max-width 1300px)
+  header
+    padding-left 95px
+    .lang
+      width 80px
+    .current-lang .title
+      display none
+  .main-search .search
+    margin-left 260px
+    margin-right 480px
+  header .lang .current-lang:after
+    right -5px
+  header .lang .current-lang
+    padding-right 0
+  header .logo
+    width 180px
+  .l-wrap
+    width 260px
+  .user-panel .user-profile .user-icon
+    left 15px
+  .user-panel .user-profile
+    padding-left 70px
+    border-right none
+    width 210px
+  .user-panel .user-profile .user-logout
+    left 70px
+  .user-panel
+    width 480px
+    margin-left -480px
+  .w1280
+    .lead-news .news-item
+      width 100%
+      smooth()
+    .my-flipster ul
+      height auto !important
+      transform translateX(0) !important
+      clearfix()
+      li
+        height 200px
+        float left
+        margin 0 !important
+  .lead-calendar
+    display block
+  .our-projects
+    display none
+  .wr
+    padding-left 15px
+    padding-right 15px
+  .my-flipster li .description p
+    font-size 24px
+    span
+      font-size 16px
+  .lead-articles .list, .lead-blogs .list
+    padding-right 5px
+  .sidebar .playlist
+    display none
+  .search form
+    padding-left 10px
+    padding-right 35px
+  .search .inp-submit
+    right 10px
+    width 18px
+  .search .inp-text
+    padding-left 5px
+    padding-right 5px
+
+@media screen and (max-width 1024px)
+  .user-panel .user-options
+    width 230px
+  .user-panel
+    width 441px
+    margin-left -441px
+  .main-search .search
+    margin-right 440px
+    margin-left 240px
+  header .lang
+    width 60px
+@media screen and (max-width 960px)
+  .sidebar
+    display none
+  .sidebar + main .content
+    margin-right 0
+    margin-left 0
+  .my-flipster li .description
+    left 0
+    padding-left 20px
+  .fixed-nav
+    display none
+  header
+    padding-left 0
+    padding-right 70px
+  .main-search
+    display none
+  .mobile-nav
+    display block
+  .user-panel,
+  .l-wrap
+    margin 0
+  .user-panel,
+  .mobile-nav
+    background-color $gray-bg
+    width 230px
+    position absolute
+    left 0
+    z-index 50
+    box-shadow 2px 3px 2px -1px $black-rgba
+  .user-panel
+    top 70px
+    height 155px
+    .user-profile
+      height 70px
+      width 100%
+      float none
+      border-top 1px solid $gray-bd
+    .user-options
+      width 100%
+      float none
+      border-top 1px solid $gray-bd
+      border-bottom 1px solid $gray-bd
+
+      padding-bottom 15px
+  .mobile-nav
+    top 207px
+    > ul > li > ul
+      display none
+    li
+      width 33.333%
+      height 76px
+      float left
+      border 1px solid $gray-bd
+      border-top none
+      border-right none
+      text-align center
+      &:last-child
+        border-right 1px solid $gray-bd
+    a
+      position relative
+      padding 0
+      text-align center
+      color $black
+      font-weight 500
+      font-size 14px
+      display block
+      width 100%
+      height 100%
+      padding-top 55px
+    .ico:after
+      content ''
+      position absolute
+      left 50%
+      top 10px
+    .ico-home:after
+      background: url('../images/sprite.png') no-repeat -1px -180px;
+      width: 27px;
+      height: 26px;
+      margin-left -(@width/2)
+    .ico-personal:after
+      background: url('../images/sprite.png') no-repeat -35px -180px;
+      width: 30px;
+      height: 20px;
+      margin-left -(@width/2)
+    .ico-knowledge:after
+      background: url('../images/sprite.png') no-repeat -73px -180px;
+      width: 31px;
+      height: 25px;
+      margin-left -(@width/2)
+    .ico-projects:after
+      background: url('../images/sprite.png') no-repeat -114px -180px;
+      width: 30px;
+      height: 29px;
+      margin-left -(@width/2)
+    .ico-articles:after
+      background: url('../images/sprite.png') no-repeat -151px -180px;
+      width: 27px;
+      height: 28px;
+      margin-left -(@width/2)
+    .ico-community:after
+      background: url('../images/sprite.png') no-repeat -186px -180px;
+      width: 31px;
+      height: 28px;
+      margin-left -(@width/2)
+    .ico-blog:after
+      background: url('../images/sprite.png') no-repeat -224px -180px;
+      width: 26px;
+      height: 30px;
+      margin-left -(@width/2)
+    .ico-video:after
+      background: url('../images/sprite.png') no-repeat -260px -180px;
+      width: 35px;
+      height: 24px;
+      margin-left -(@width/2)
+    .ico-audio:after
+      background: url('../images/sprite.png') no-repeat -305px -180px;
+      width: 30px;
+      height: 27px;
+      margin-left -(@width/2)
+    .ico-images:after
+      background: url('../images/sprite.png') no-repeat -345px -180px;
+      width: 30px;
+      height: 22px;
+      margin-left -(@width/2)
+    .ico-apps:after
+      background: url('../images/sprite.png') no-repeat -382px -180px;
+      width: 32px;
+      height: 24px;
+      margin-left -(@width/2)
+    a:hover
+      background-color $black
+      color #fff
+      .ico:after
+        background-position-y -144px
+  .mobile-menu-trigger
+    display block
+    position absolute
+    left 0
+    top 0
+    height 70px
+    width 70px
+    background-color #f0c419
+    color $black
+    span
+      top 21px
+      left 25px
+  .user-panel,
+  .mobile-nav
+    anim()
+    transform translateX(-105%)
+    &.show
+      transform translateX(0)
+  header .lang
+    position absolute
+    right 0
+    top 0
+    width 70px
+    height 70px
+    border-left 1px solid $gray-bd
+  header .lang .button-dropdown .dropdown
+    left auto
+    right -19px
+  header .logo
+    border-right none
+  .l-wrap
+    width 100%
+    .logo
+      width 100%
+      a
+        margin 8px auto 8px
+@media screen and (max-width 640px)
+  .lead-image
+    height 230px
+  .lead-news .news-item .title
+    display table
+    width 100%
+    span
+      display table-cell
+      vertical-align middle
+  .lead-news .news-item .image
+    background-position 0% 25%
+  .lead-news .news-item .tag
+    min-height 42px
+    line-height 42px
+  main .headling
+    font-size 30px
+  .owl-prev,
+  .owl-next
+    width 36px
+    height 36px
+    top -60px
+  .owl-prev
+    right 45px
+  .lead-news .news-item
+    margin-bottom 0
+    height 205px
+    overflow hidden
+  .lead-news
+    .single-carousel
+      opacity 0
+      anim()
+      &.owl-loaded
+        opacity 1
+  .lead-calendar .calendar-events
+    width 100%
+    padding-left 0
+  .lead-calendar .calendar
+    position relative
+    width 100%
+    .datepicker-inline
+      padding-left 120px
+  .datepicker--nav
+    padding 20px
+  .datepicker--content
+    display none
+  .calendar
+    margin-bottom 30px
+  .calendar-trigger
+    display block
+    cursor pointer
+    position absolute
+    left 0
+    top 0
+    width 80px
+    height 80px
+    border 3px solid #b38b1d
+    border-radius 50%
+    line-height 68px
+    text-align center
+    font-size 27px
+    color #b38b1d
+    text-decoration underline
+  .lead-calendar .calendar-events .title,
+  .lead-calendar .calendar-events .description
+    font-size 24px
+  .my-flipster li
+    width 100%
+  .my-flipster li .description p
+    font-size 59px
+    span
+      font-size 36px
+  .lead-photos
+    display none
+  .lead-video .item .title
+    font-size 30px
+    font-weight 500
+  .lead-video .item .image
+    height 310px
+  .lead-video .item .footer
+    height 60px
+    line-height 60px
+    top 250px
+  .lead-news .news-item .title
+    font-size 24px
+    font-weight normal
+  .lead-video .item .footer
+    font-size 24px
+    .viewed-icon:after
+      background: url('../images/sprite.png') no-repeat -454px -327px;
+      width: 38px;
+      height: 22px;
+      margin-top -(@height/2)
+    .viewed-icon
+      padding-left 45px
+    .comments-icon:after
+      background: url('../images/sprite.png') no-repeat -424px -327px;
+      width: 25px;
+      height: 24px;
+      margin-top -(@height/2)
+    .comments-icon,
+    .likes-icon
+      padding-left 35px
+    .likes-icon:after
+      background: url('../images/sprite.png') no-repeat -385px -327px;
+      width: 29px;
+      height: 24px;
+      margin-top -(@height/2)
+  .lead-review .item .image
+    height 130px
+  .lead-review
+    .user
+      width 110px
+      height 110px
+      a
+        background-size cover
+    .item
+      height auto
+      padding-bottom 35px
+      p
+        font-size 24px
+        line-height 1.2
+        font-weight normal
+        max-height 1000px
+        padding-top 25px
+  .lead-review .item .user-details .user-name
+    font-size 24px
+    top 20px
+    font-weight 500
+  .lead-review .item .footer
+    display none
+  .lead-review .item .user-details
+    top 75px
+  .lead-tabs-mobile-triggers
+    display block
+  .lead-articles, .lead-blogs
+    width 100%
+  .lead-articles .header, .lead-blogs .header
+    position static
+  .lead-blogs
+    display none
+  .lead-tabs-mobile-triggers
+    height 90px
+    line-height 90px
+    width 100%
+    text-transform uppercase
+    clearfix()
+    a
+      float left
+      width 50%
+      text-align center
+      font-weight 500
+      font-size 30px
+      color $black
+      border-top 2px solid $violet
+    .current
+      background: #897dcd;
+      background: -moz-linear-gradient(top,  #897dcd 0%, #ffffff 60%);
+      background: -webkit-linear-gradient(top,  #897dcd 0%,#ffffff 60%);
+      background: linear-gradient(to bottom,  #897dcd 0%,#ffffff 60%);
+  .lead-articles, .lead-blogs
+    .headling
+      display none
+  .lead-articles .header,
+  .lead-blogs .header
+    margin-bottom 50px
+    margin-top 25px
+  .lead-articles .header span a,
+  .lead-blogs .header span a
+    width 140px
+    height 50px
+    line-height 46px
+    display inline-block
+    font-size 24px
+    font-weight 500
+    text-align center
+    border-radius 10px
+  .lead-articles .header span a.current, .lead-blogs .header span a.current
+    border 2px solid $violet
+    background-color #e7e5f5
+  .lead-articles .item a p,
+  .lead-blogs .item a p
+    font-size 24px
+    font-weight 400
+  .lead-tabs
+    .footer
+      font-size 24px
+      color #646464
+      margin-top 20px
+      margin-bottom 40px
+    .viewed-icon
+      padding-left 48px
+    .viewed-icon:after
+      background: url('../images/sprite.png') no-repeat -454px -364px;
+      width: 38px;
+      height: 22px;
+      margin-top -(@height/2)
+    .comments-icon
+      padding-left 35px
+    .comments-icon:after
+      background: url('../images/sprite.png') no-repeat -424px -366px;
+      width: 25px;
+      height: 24px;
+      margin-top -(@height/2)
+  .lead-blogs
+    .item
+      padding-top 0
+      padding-left 120px
+    .user
+      width 110px
+      height 110px
+      a
+        background-size cover
+  .desktop-version
+    display block
+    position absolute
+    bottom 0
+    left 0
+    height 90px
+    line-height 90px
+    font-size 24px
+    font-weight 500
+    color #fff
+    background-color #4ebcf0
+    width 100%
+    text-align center
+    anim()
+  main
+    position relative
+    padding-bottom 90px
+  header .lang
+    z-index 40
+@media screen and (max-width 540px)
+  main .headling
+    padding-right 90px
+  .my-flipster li .description p
+    font-size 32px
+    span
+      font-size 24px
+  .lead-news .news-item .title,
+  .lead-review .item p,
+  .lead-calendar .calendar-events .title,
+  .lead-calendar .calendar-events .description
+    font-size 18px
+  .lead-articles .header, .lead-blogs .header
+    margin-bottom 15px
+  header .logo a span
+    display none
+  header
+    padding-right 0
+  .desktop-version
+    font-size 18px
+    line-height 1
+    height auto
+    padding 25px
+  .datepicker--nav
+    padding 5px
+  .calendar-trigger
+    width 48px
+    height 48px
+    line-height 38px
+    font-size 18px
+  .lead-calendar .calendar .datepicker-inline
+    padding-left 55px
+  .lead-tabs-mobile-triggers a
+    font-size 24px
+  .lead-articles .header span a, .lead-blogs .header span a
+    width 100px
+  .lead-news .news-item
+    height 210px
+  .lead-news .news-item .image
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background-position 0 25px
+  .lead-news .news-item .title
+    position relative
+    z-index 10
+  .lead-review .item .user-details .user-name
+    position absolute
+    line-height 1
+    top 45px
+    left 120px
+@media screen and (max-width 420px)
+  .lead-blogs .user
+    position static
+    float left
+    margin-right 10px
+  .lead-blogs .item
+    padding-left 0
+  .lead-articles .item a p, .lead-blogs .item a p
+    font-size 18px
+  .lead-articles .header span, .lead-blogs .header span
+    margin-right 5px

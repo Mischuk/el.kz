@@ -1,0 +1,20 @@
+//- Mixins
+clearfix()
+  &:before
+  &:after
+    content ''
+    display table
+    clear both
+
+anim()
+  transition all 0.25s ease-out
+trs(var, time)
+  transition var time ease-out
+smooth()
+  -webkit-transform translate3d(0, 0, 0)
+  -webkit-backface-visibility hidden
+  -webkit-perspective 1000
+font(fw, fz, lh)
+  font-weight fw
+  font-size fz
+  line-height lh

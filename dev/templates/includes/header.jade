@@ -1,0 +1,37 @@
+header
+  //Responsive menu
+  a(href="#").mobile-menu-trigger: span
+  .main-search
+    .search
+      form
+        input(type="text" placeholder="поиск по сайту...").inp-text
+        input(type="submit" value="").inp-submit
+  .user-panel
+    .user-profile.online
+      .user-icon: a(href="#" style="background-image: url(../images/content/user-icon.png)")
+      .user-name: a(href="#") Жанар Дугалова
+      .user-logout: a(href="#") выйти
+    .user-options
+      .settings: a(href="#" title="Настройки")
+      .blog: a(href="#" title="Блог")
+      .messages: a(href="#" title="Сообщения"): .counter 23
+      .friends: a(href="#" title="Друзья"): .counter 1
+      .notification: a(href="#" title="Оповещения"): .counter 110
+  .l-wrap
+    .logo
+      a(href="#")
+        span Әлеуметтік желісі
+    .lang
+      .button-dropdown
+        span(href="#" class="current-lang")
+          .ru
+          .title Русский
+        ul(class="dropdown")
+          li: a(href="#" class="dropdown-link")
+            .ru
+            .title Русский
+          li: a(href="#" class="dropdown-link")
+            .kz
+            .title Қазақша
+  include fixed-nav-mobile
+
