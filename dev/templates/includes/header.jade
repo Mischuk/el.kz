@@ -22,16 +22,18 @@ header
       a(href="#")
         span Әлеуметтік желісі
     .lang
-      .button-dropdown
-        span(href="#" class="current-lang")
-          .ru
-          .title Русский
-        ul(class="dropdown")
-          li: a(href="#" class="dropdown-link")
-            .ru
-            .title Русский
-          li: a(href="#" class="dropdown-link")
-            .kz
-            .title Қазақша
+      .lang-menu.button-dropdown
+        li
+          a(href="#")
+            span(href="#" class="current-lang")
+              .ru
+              .title Русский
+          ul(class="dropdown")
+            li: a(href="#" class="dropdown-link")
+              .ru
+              .title Русский
+            li: a(href="#" class="dropdown-link")
+              .kz
+              .title Қазақша
   include fixed-nav-mobile
 

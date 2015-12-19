@@ -1,0 +1,45 @@
+.pagination
+  display block
+  text-align center
+  ul, li
+    display inline-block
+    vertical-align middle
+    line-height 20px
+    a, span
+      display block
+      width 20px
+      height 20px
+      color #082e41
+    span
+      cursor default
+    a:hover
+      font-weight bold
+  .current a
+    text-decoration underline
+    font-weight bold
+  .prev, .next
+    a
+      position relative
+      width 20px
+      height 20px
+      border 1px solid $gray-bd
+      background-color #e8f0f4
+      border-radius 50%
+      margin-left 10px
+      margin-right 10px
+      &:after
+        content ''
+        position absolute
+        left 50%
+        top 50%
+        width 4px
+        height 7px
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+      &:hover
+        background-color: #24c2cb;
+        border-color: #24c2cb;
+  .next a:after
+    background: url('../images/sprite.png') no-repeat -151px -9px;
+  .prev a:after
+    background: url('../images/sprite.png') no-repeat -140px -9px;

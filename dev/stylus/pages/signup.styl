@@ -1,0 +1,224 @@
+.signup
+  margin 0 auto
+  padding-left 204px
+  padding-right 269px
+  .wrap
+    margin 0 auto
+    border-left 1px solid $gray-bd
+    border-right 1px solid $gray-bd
+    margin-top -40px
+    padding-bottom 175px
+@media screen and (max-width 1300px)
+  .signup
+    padding-left 179px
+@media screen and (max-width 1024px)
+  .signup
+    padding-right 230px
+.large-form
+  .styledSelect
+    border-color #ccc
+  .styledSelect:after
+    width: 0;
+    height: 0;
+    top 50%
+    margin-top -2px
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #b6b6b6 transparent transparent transparent;
+
+  .field
+    display block
+    margin-bottom 20px
+    > label
+      display inline-block
+      vertical-align middle
+      width 205px
+      text-align right
+      font-size 14px
+      font-weight 100
+    > .input
+      display inline-block
+      vertical-align middle
+  .input
+    position relative
+    margin-left 5px
+    input
+      height 30px
+      line-height 28px
+      border 1px solid $gray-bd
+      width 380px
+      padding-left 10px
+      padding-right 10px
+      &:hover, &:focus
+        border-color $green
+      &.error
+        border-color $red
+  .req
+    color $red
+  .label.red
+    position absolute
+    right 0
+    top -12px
+    color $red
+    font-size 12px
+    line-height 12px
+    height 12px
+  .f-group
+    padding 0 40px
+    padding-top 30px
+  .form-headling + div label
+    vertical-align top
+    padding-top 5px
+  .form-headling
+    display block
+    background-color #ebf5fb
+    height 35px
+    line-height 35px
+    margin-bottom 30px
+    margin-top 30px
+    padding-left 30px
+    padding-right 30px
+    cursor default
+    font-size 14px
+    color #082e41
+    font-weight 500
+    font-style italic
+    &:first-child
+      margin-top 0
+  .upload-file
+    border-radius 0
+    height 250px
+    width 380px
+    border none
+    background none !important
+    &:after
+      display none
+    .icon-image
+      position absolute
+      left 0
+      top 0
+      width 200px
+      height 200px
+      border 1px solid $gray-bd
+      background-color #f5f5f5
+      overflow hidden
+      cursor pointer
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -217px -395px;
+        width: 50px;
+        height: 42px;
+        position absolute
+        left 50%
+        top 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+    input
+      position absolute
+      z-index 20
+      left 0
+      bottom 0
+      width 120px !important
+      height 25px !important
+      padding 0 !important
+    input:hover + span
+      box-shadow none
+      background-color $green
+      color #fff
+      border-color $green
+    span
+      height 25px
+      line-height 23px
+      width 120px
+      border 1px solid #6e6e6e
+      box-shadow inset 0 0 1px 0 rgba(50,50,50,.3)
+      border-radius 5px
+      text-align center
+      top auto
+      bottom 0
+      padding-left 0
+      anim()
+      &:hover
+        background-color #6e6e6e
+    i
+      position absolute
+      bottom 0
+      left 130px
+      cursor default
+  .select
+    width 100%
+    height 30px
+    line-height 28px
+  .options
+    max-height 250px
+    overflow auto
+  .day
+    width 60px
+  .month
+    width 130px
+    margin-left 17px
+  .year
+    width 105px
+    margin-left 17px
+  .country
+    width 170px
+  .city
+    width 140px
+    margin-left 19px
+  .full
+    width 329px
+  .medium-width
+    input
+      width 329px
+  input.submit
+    float right
+    background-color #fff
+    border 1px solid #395867
+    height 25px
+    line-height 23px
+    width 120px
+    margin-left 414px
+    border-radius 5px
+    box-shadow inset 0 0 1px #adb9c0
+    anim()
+    &:hover
+      background-color $green
+      color #fff
+      border-color $green
+  .field.error .icon-image
+    border-color $red
+  .styledSelect:hover,
+  .styledSelect.active
+    border-color $green
+  textarea
+    height 125px
+    resize none
+    width 380px
+    border 1px solid $gray-bd
+    padding 5px 10px
+    &:hover, &:focus
+      border-color $green
+    &.error
+      border-color $red
+#form-signup_v2 .submit
+  margin-left 465px
+.add-field
+  width 590px
+  text-align right
+  padding-right 50px
+  a
+    display inline-block
+    background-color #ebf5fb
+    color #082e41
+    height 30px
+    width 250px
+    font-weight 500
+    text-align center
+    border-radius 5px
+    line-height 30px
+    // anim()
+    &:hover
+      background-color #082e41
+      color #fff
+
+

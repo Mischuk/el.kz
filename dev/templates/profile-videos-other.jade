@@ -1,0 +1,130 @@
+doctype html
+html
+  head
+    title Профиль
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile
+      main
+        section.content
+          .profile
+            .profile-menu
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-of.png)")
+                .name: a(href="#") Джон Сноу
+                .status.online Онлайн
+              .new-user-options
+                .add-friend: a(href="#") Добавить в друзья
+                .add-message: a(href="#") Написать сообщение
+              ul
+                li: a(href="#").icon.friends Друзья
+                li: a(href="#").icon.blog Блог
+                li: a(href="#").icon.images Фотоальбомы
+                li: a(href="#").icon.videos Видеозаписи
+                li: a(href="#").icon.audios Аудиозаписи
+            .profile-main
+              .profile-user-info
+                .quote Я буду жить и умру на своем посту. Я - меч во тьме; я - Дозорный на Стене; я огонь, который разгоняет холод; я - свет, который приносит рассвет; я - рог, который будит спящих; я - щит, который охраняет царство людей.
+                .gender
+                  span.title Пол:
+                  span женский
+                .age
+                  span.title Возраст:
+                  span 28 лет
+                .locate
+                  span.title Местожительство:
+                  span Казахстан, Акмолинская область, Астана
+                .hide.profile-user-info-hidden
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                .toggle-info: a(href="#") показать подробную информацию
+              .profile-images.wr
+                .header
+                  .tabs
+                    a(href="#" class="all-video current")
+                      span мои видео
+                      span.total (6)
+                .lead-photos.videos
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/1.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/2.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/3.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/4.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/3.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/2.jpg)")
+                      .title Құрмаш Махан
+                      .lenght 34:01
+                    .footer
+                      .viewed-icon: span 14
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+      include includes/fixed-nav
+    include includes/scripts

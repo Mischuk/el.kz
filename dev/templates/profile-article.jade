@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    title Профиль - Статья
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile
+      main
+        section.content
+          .profile
+            .profile-menu
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-icon-large.png)")
+                .name: a(href="#") Жанар Дугалова
+                .status.online Онлайн
+                .load-userpic: a(href="#") Изменить аватар
+              ul
+                li: a(href="#").icon.messages Мои сообщения
+                li: a(href="#").icon.friends Мои друзья
+                li: a(href="#").icon.blog Мой блог
+                li: a(href="#").icon.images Мои фотоальбомы
+                li: a(href="#").icon.videos Мои видеозаписи
+                li: a(href="#").icon.audios Мои аудиозаписи
+                li: a(href="#").icon.pref Настройка профиля
+            .profile-main
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-icon-large.png)")
+                .name: a(href="#") Жанар Дугалова
+                .status.online Онлайн
+                .load-userpic: a(href="#") Изменить аватар
+              .profile-articles
+                .lead-article(style="background-image: url(../images/content/lead-article.jpg)")
+                  h3 Во что поиграть до конца года? Самые ожидаемые видеоигры второй половины 2015 года
+                article.wr
+                  p На дворе 2015 год и мы живем в мире, где реалистичные компьютерные игры никого не удивят. Каждый год такие игры выходят пачками. Но, среди таких игр выделяются игры, которые становятся ожидаемыми играми и иногда даже выигрывают премию "Самая ожидаемая игра" на разных выставках и конференциях.
+                  p Первая половина года уже прошла и до конца года нас ждет кучу новинок и интересных видеоигр. Поэтому я решил начать пост-трилогию о самых ожидаемых играх. Вторым постом будет "Самые ожидаемые игры первой половины 2016 года". <b>Давайте, пройдемся по списку :)</b>
+                  p Анонс этой игры состоялся 10 июня 2013 года, на игровой выставке Е3. Компьютерная игра от третьего лица основанный о серии фильмов <b>"Безумный Макс"</b>. Главным героем игры будет Макс Рокатански, который вынужден выживать в пост-апокалипсическом мире. В игре главным локацием будет пустыня. Безусловно, это один из самых ожидаемых игр в жанре пост-апокалипсис. Релиз игры назначена на <b>1 сентября на платформах PC, XOne, PS4.</b>
+                  p(style="text-align:center"): img(src="../images/content/article-1.jpg", alt="")
+                  p Детище Хидео Кодзима является стелс-экшеном от третьего лица. В этом году на свет выходит уже пятая часть этой серии. В игровой индустрии это главная гордость Японии. Главным героем игры выступает все тот же Веном Снейк. Пятая часть серии продолжает приключения Биг Босса. Он просыпается в 1984 году после девятилетней комы и начинает расследовать деятельность загадочной организации XOF. Дата выхода игры <b>1 сентября на PS3, PS4, X360, XOne и на РС.</b>
+                  p(style="text-align:center"): img(src="../images/content/article-2.jpg", alt="")
+                  p Детище Хидео Кодзима является стелс-экшеном от третьего лица. В этом году на свет выходит уже пятая часть этой серии. В игровой индустрии это главная гордость Японии. Главным героем игры выступает все тот же Веном Снейк. Пятая часть серии продолжает приключения Биг Босса. Он просыпается в 1984 году после девятилетней комы и начинает расследовать деятельность загадочной организации XOF. Дата выхода игры <b>1 сентября на PS3, PS4, X360, XOne и на РС.</b>
+                .footer.wr
+                  .date 11.12.2015, 02:24
+                  .viewed-icon-inner 123
+                  .comments-icon-inner: a(href="#") 123
+                .user-comments.wr
+                  section
+                    .header
+                      h3.headling Комментарии
+                      .custom-select
+                        select
+                          option сначала новые
+                          option сначала старые
+                    .post-comment
+                      .user.online
+                        a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                      form
+                        textarea.inp-text(placeholder="присоедениться к обсуждению")
+                        .bottom-form
+                          .upload-file
+                            span Прикрепить
+                            input(type="file" name="photo")
+                          .send: input(type="submit" value="Отправить").inp-submit
+                    .user-comments-list
+                      .item
+                        .user.busy
+                          a(href="#" style="background-image: url(../images/content/userpics/3.png)")
+                        section
+                          .header
+                            a(href="#").user-name Батыр
+                            span.date 3 месяца назад
+                          .body Сұхбат өте өзекті мәселелер төңірегінде орбиген. Жастарды искерликке шақыратын, қалай табысқа жетугеболатынын көрсететін немесе ғылым изденуге қызықтырыпбағдарламалар керекті. Теледидар шоу бағдарламаларға толы, сондықтан жастардың кобшилиги әнші немесе шоу мен болуды армандайды. Бизде жастарға насихат жетіспеуде деп ойлаймын.
+                          .footer
+                            .like: a(href="#") 15
+                            .dislike: a(href="#") 2
+                            .share: a(href="#") 3
+      include includes/fixed-nav
+    include includes/scripts

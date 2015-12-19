@@ -1,0 +1,75 @@
+doctype html
+html
+  head
+    title Сообщества - Внутренняя
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-group-index
+      main
+        //- a(href="#").desktop-version ПЕРЕЙТИ НА ПОЛНУЮ ВЕРСИЮ САЙТА
+        section.content
+          .sidebar-groups
+            .lead(style="background-image: url(../images/content/groups/group-background.png)")
+              .logo: img(src="../images/content/groups/group-icon.png" alt="")
+              .lead-title Астана – арман қала!
+            .members <span>3678</span> фанатов
+            .info
+              .date 34 дней назад
+              .admin: a(href="#") Admin
+            .join
+              a(href="#") Вступить в сообщество
+          article.wr
+            p(style="text-align: center"): b Астана (1998 жылдың 6 мамырына дейін – Ақмола) Қазақстан Республикасы Президентінің 1997 жылғы 20 қазандағы Жарлығымен және Қазақстан Республикасы Парламентінің мақұлдауымен 1997 жылғы 10 желтоқсаннан бастап Қазақстан Республикасының астанасы болып жарияланды.
+            <br/><br/>
+            p Қазақстанның жаңа елордасы – Астананың халықаралық тұсаукесері 1998 жылғы 10 маусымда өткізілді.
+            p Астана ең алғаш Елордамыз болғанда қандай еді? Әрине ол туралы әзірге сурет сөйлей тұрсын! Ол кезде қазіргі «Бәйтерек», «Ханшатыр» секілді ғимараттардың өзі түгіл ізі де жоқ!
+            p: b ...1998 жылдың күзі. Сарыарқаның төрінде шыр етіп, дүние есігін ашқан шақалаққа ата-анасы Еркежан деп ат берді. Өмірге сәби келгеніне бір қуанса, оның Астананың түйдей құрдасы болатынына тағы қуаныпты!
+            <br/>
+            p(style="text-align: center"): b Астана – "екі жаста"!
+            <br/>
+            .article-list
+              p(style="text-align: center"): b Қала жөнінде жалпы мәліметтер:
+              ul
+                li Құрылған жылы – 1832 ж.
+                li Теміржол бекетінің атауы – Астана станциясы.
+                li 1961 жылғы дейін – Акмола қаласы.
+                li 1961 жылдан 1992 жылға дейін – Целиноград қаласы.
+                li 1993 жылдан 1998 жылға дейін – Ақмола қаласы.
+                li 1997 жылғы 20 қазандағы ҚР Президентінің Жарлығымен Ақмола қаласы Қазақстан Республикасының астанасы болып жарияланды.
+                li 1998 жылғы 6 мамырдағы ҚР Президентінің Жарлығымен Ақмола қаласының атауы Астана болып өзгертілді.
+          .user-comments.wr
+            section
+              .header
+                h3.headling Комментарии
+                .custom-select
+                  select
+                    option сначала новые
+                    option сначала старые
+              .post-comment
+                .user.online
+                  a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                form
+                  textarea.inp-text(placeholder="присоедениться к обсуждению")
+                  .bottom-form
+                    .upload-file
+                      span Прикрепить
+                      input(type="file" name="photo")
+                    .send: input(type="submit" value="Отправить").inp-submit
+              .user-comments-list
+                .item
+                  .user.busy
+                    a(href="#" style="background-image: url(../images/content/userpics/3.png)")
+                  section
+                    .header
+                      a(href="#").user-name Батыр
+                      span.date 3 месяца назад
+                    .body Сұхбат өте өзекті мәселелер төңірегінде орбиген. Жастарды искерликке шақыратын, қалай табысқа жетугеболатынын көрсететін немесе ғылым изденуге қызықтырыпбағдарламалар керекті. Теледидар шоу бағдарламаларға толы, сондықтан жастардың кобшилиги әнші немесе шоу мен болуды армандайды. Бизде жастарға насихат жетіспеуде деп ойлаймын.
+                    .footer
+                      .like: a(href="#") 15
+                      .dislike: a(href="#") 2
+                      .share: a(href="#") 3
+
+      include includes/fixed-nav
+    include includes/scripts

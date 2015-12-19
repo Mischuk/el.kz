@@ -1,0 +1,216 @@
+doctype html
+html
+  head
+    title Регистрация
+    include includes/head
+  body
+    .container
+      include includes/header
+      main
+        //- a(href="#").desktop-version ПЕРЕЙТИ НА ПОЛНУЮ ВЕРСИЮ САЙТА
+        section.content
+          .signup
+            .wrap
+              .signup-form.large-form
+                form#form-signup_v1(name='form-signup_v1', method='POST')
+                  .f-group
+                    .form-headling Основная информация
+                    .field
+                      label(for='signup_v1-userpic') <span class="req">*</span> Фотография на аватар:
+                      .input
+                        .upload-file
+                          .icon-image
+                          input(type="file" name="photo" data-validation="[NOTEMPTY]" data-validation-message='Выберите фотографию')
+                          span Выбрать файл
+                          i не больше 3 мб, в формате .JPG, .PNG
+                    .field
+                      label(for='signup_v1-username') <span class="req">*</span> Имя:
+                      .input
+                        input#signup_v1-username(name='signup_v1[username]' type='text' data-validation='[L>=2, L<=18, MIXED]', data-validation-message='Введите имя')
+                    .field
+                      label(for='signup_v1-usersurname') <span class="req">*</span> Фамилия:
+                      .input
+                        input#signup_v1-usersurname(name='signup_v1[usersurname]' type='text' data-validation='[L>=2, L<=18, MIXED]', data-validation-message='Введите фамилию')
+                    .field
+                      label(for='signup_v1-email') <span class="req">*</span> E-mail:
+                      .input
+                        input#signup_v1-email(name='signup_v1[email]', type='text', data-validation='[EMAIL]' data-validation-message='Введите корректный e-mail адрес')
+                    .field
+                      label(for='signup_v1-gender') Пол:
+                      .input
+                        label.radio-custom
+                          input(name="signup_v1[gender]" type="radio" value="male")
+                          span.icon
+                          span.text мужской
+                        label.radio-custom
+                          input(name="signup_v1[gender]" type="radio" value="female")
+                          span.icon
+                          span.text женский
+                    .field
+                      label(for='signup_v1-password') <span class="req">*</span> Пароль:
+                      .input
+                        input#signup_v1-password(name='signup_v1[password]', type='password', data-validation='[L>=6]', data-validation-message='Пароль должен быть не меньше 6 символов')
+                    .field
+                      label(for='signup_v1-password-confirm') <span class="req">*</span> Подтвердите пароль:
+                      .input
+                        input#signup_v1-password-confirm(name='signup_v1[password-confirm]', type='password', data-validation='[V==signup_v1[password]]', data-validation-message='Пароли не совпадают')
+                    .form-headling Дополнительная информация
+                    .field
+                      label Дата рождения:
+                      .input
+                        .select.day
+                          select
+                            option(value="") 1
+                            option(value="") 2
+                            option(value="") 3
+                            option(value="") 4
+                            option(value="") 5
+                            option(value="") 6
+                            option(value="") 7
+                            option(value="") 8
+                            option(value="") 9
+                            option(value="") 10
+                            option(value="") 11
+                            option(value="") 12
+                            option(value="") 13
+                            option(value="") 14
+                            option(value="") 15
+                            option(value="") 16
+                            option(value="") 17
+                            option(value="") 18
+                            option(value="") 19
+                            option(value="") 20
+                            option(value="") 21
+                            option(value="") 22
+                            option(value="") 23
+                            option(value="") 24
+                            option(value="") 25
+                            option(value="") 26
+                            option(value="") 27
+                            option(value="") 28
+                            option(value="") 29
+                            option(value="") 30
+                            option(value="") 31
+                        .select.month
+                          select
+                            option январь
+                            option февраль
+                            option март
+                            option апрель
+                            option май
+                            option июнь
+                            option июль
+                            option август
+                            option сентябрь
+                            option октябрь
+                            option ноябрь
+                            option декабрь
+                        .select.year
+                          select
+                            option 1970
+                            option 1971
+                            option 1972
+                            option 1973
+                            option 1974
+                            option 1975
+                            option 1976
+                            option 1977
+                            option 1978
+                            option 1979
+                            option 1980
+                            option 1981
+                            option 1982
+                            option 1983
+                            option 1984
+                            option 1985
+                            option 1986
+                            option 1987
+                            option 1988
+                            option 1989
+                            option 1991
+                            option 1992
+                            option 1993
+                            option 1994
+                            option 1995
+                            option 1996
+                            option 1997
+                            option 1998
+                            option 1999
+                            option 2000
+                            option 2001
+                            option 2002
+                            option 2003
+                            option 2004
+                            option 2005
+                            option 2006
+                            option 2007
+                            option 2008
+                            option 2009
+                            option 2010
+                    .field
+                      label Местожительства:
+                      .input
+                        .select.country
+                          select
+                            option Казахстан
+                            option Россия
+                            option Украина
+                        .select.city
+                          select
+                            option Астана
+                            option Город 1
+                            option Город 2
+                            option Город 3
+                    .field
+                      label Семейное положение:
+                      .input
+                        .select.full
+                          select
+                            option Не женат
+                            option Женат
+                            option Обручен
+                    .field
+                      label Образование:
+                      .input
+                        .select.full
+                          select
+                            option высшее
+                            option высшее неоконченное
+                            option среднее
+                    .field.medium-width
+                      label Место работы:
+                      .input
+                        input(type="text")
+                    .field.medium-width
+                      label Должность:
+                      .input
+                        input(type="text")
+                    .field
+                      .input
+                        input.submit.button(type='submit', value='Далее')
+                form#form-signup_v2(name='form-signup_v2', method='POST').hide
+                  .f-group
+                    .form-headling Дополнительная информация
+                    .field
+                      label Деятельность:
+                      .input: textarea
+                    .field
+                      label Интересы:
+                      .input: textarea
+                    .field
+                      label Любимая музыка:
+                      .input: textarea
+                    .field
+                      label Любимые книги:
+                      .input: textarea
+                    .field
+                      label Любимые цитаты:
+                      .input: textarea
+                    .field
+                      label О себе:
+                      .input: textarea
+                    .field
+                      .input
+                        input.submit.button(type='submit', value='Сохранить')
+      include includes/fixed-nav
+    include includes/scripts

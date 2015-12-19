@@ -1,0 +1,33 @@
+.radio-custom
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width 12px
+  height 12px
+  line-height 12px
+  cursor pointer
+  text-align center
+  & > input[type=radio]
+    display none
+  & > .text
+    font-size 12px
+    line-height 12px
+    display inline-block
+    vertical-align middle
+    margin-left 5px
+    margin-right 20px
+  & > .icon
+    background #fff
+    border solid 1px #b1b1b1
+    background-color #d1d1d1
+    display inline-block
+    width 10px
+    height 10px
+    border-radius 100%
+    vertical-align middle
+  & > input[type=radio]:checked
+    & + .icon
+      box-shadow inset 0 0 0 1px #d1d1d1
+      background #858585

@@ -1,0 +1,115 @@
+doctype html
+html
+  head
+    title Видео - Внутренняя
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile-video-logos
+      main
+        section.content
+          .video-lead
+            .video-player
+              video(width="640" height="360" style="width: 100%;" src="../media/echo-hereweare.mp4" type="video/mp4" id="player1" poster="../media/echo-hereweare.jpg" controls="controls" preload="none")
+            .video-description.wr
+              .wrp
+                .date 15 декабря, 2015, 03:10
+                .title Лучшие моменты в хоккее Казахстана 2014 - 2015
+                p Представляем вашему вниманию специально подготовленный проектом El.kz видеороликпосвященный лучшим моментам в хоккее Казахстана за 2015 год
+            .image-slider-footer.wr
+              .details
+                .date 11.12.2015, 02:24
+                .posted Admin
+                .comments-icon-inner: a(href="#") 1
+                .viewed-icon-inner 12
+              .share
+                span Поделиться:
+                a(href="#").facebook
+                a(href="#").twitter
+                a(href="#").youtube
+                a(href="#").tumblr
+          .images-albums.wr
+            h2.headling Похожие видео
+            .relative-video
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/1.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/2.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/3.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/1.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/2.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+              .slide
+                a(href="#")
+                  .image(style="background-image:url(../images/content/items/3.jpg)")
+                  .title Құрмаш Махан
+                  .footer
+                    .viewed-icon: span 14
+                    .comments-icon: span 5
+                    .likes-icon: span 2
+            .user-comments
+              section
+                .header
+                  h3.headling Комментарии
+                  .custom-select
+                    select
+                      option сначала новые
+                      option сначала старые
+                .post-comment
+                  .user.online
+                    a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                  form
+                    textarea.inp-text(placeholder="присоедениться к обсуждению")
+                    .bottom-form
+                      .upload-file
+                        span Прикрепить
+                        input(type="file" name="photo")
+                      .send: input(type="submit" value="Отправить").inp-submit
+                .user-comments-list
+                  .item
+                    .user.busy
+                      a(href="#" style="background-image: url(../images/content/userpics/3.png)")
+                    section
+                      .header
+                        a(href="#").user-name Батыр
+                        span.date 3 месяца назад
+                      .body Сұхбат өте өзекті мәселелер төңірегінде орбиген. Жастарды искерликке шақыратын, қалай табысқа жетугеболатынын көрсететін немесе ғылым изденуге қызықтырыпбағдарламалар керекті. Теледидар шоу бағдарламаларға толы, сондықтан жастардың кобшилиги әнші немесе шоу мен болуды армандайды. Бизде жастарға насихат жетіспеуде деп ойлаймын.
+                      .footer
+                        .like: a(href="#") 15
+                        .dislike: a(href="#") 2
+                        .share: a(href="#") 3
+      include includes/fixed-nav
+    include includes/scripts

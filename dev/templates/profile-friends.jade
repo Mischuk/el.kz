@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    title Профиль
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-friends
+      main
+        section.content
+          .profile
+            .profile-menu
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-of.png)")
+                .name: a(href="#") Джон Сноу
+                .status.online Онлайн
+              .new-user-options
+                .add-friend: a(href="#") Добавить в друзья
+                .add-message: a(href="#") Написать сообщение
+              ul
+                li: a(href="#").icon.friends Друзья
+                li: a(href="#").icon.blog Блог
+                li: a(href="#").icon.images Фотоальбомы
+                li: a(href="#").icon.videos Видеозаписи
+                li: a(href="#").icon.audios Аудиозаписи
+            .profile-main
+              .profile-images.wr
+                .header
+                  .tabs
+                    a(href="#" class="all-images current")
+                      span все друзья
+                      span.total (7)
+                    a(href="#" class="all-albums")
+                      span онлайн
+                      span.total (2)
+                .lead-photos.images
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/5.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/4.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend.active: a(href="#" class="") Друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/3.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/2.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/1.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/2.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/3.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/2.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/1.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/2.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                .lead-photos.albums
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/1.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+                  .friend-item
+                    a(href="#" style="background-image:url(../images/content/friends/2.png)").image
+                    .friend-name: a(href="#" class="") Арья Старк
+                    .add-to-friend: a(href="#" class="") Добавить в друзья
+      include includes/fixed-nav
+    include includes/scripts

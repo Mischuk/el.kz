@@ -1,0 +1,295 @@
+audio
+  opacity 0
+.track-cover
+  position absolute
+  left 0
+  top 0
+  z-index 30
+  background-repeat no-repeat
+  background-position 0 0
+  background-size cover
+  width 95px
+  height 95px
+  border 1px solid #082e41
+.track-title
+  position absolute
+  left 115px
+  top 15px
+  z-index 20
+  .artist
+    font-size 14px
+    font-weight 500
+    color #082e41
+  .song
+    color #555555
+    font-size 14px
+    margin-top 5px
+.large-audio
+  display block
+  .mejs-container,
+  .mejs-playlist
+    width 100% !important
+    height auto !important
+  .mejs-container
+    padding-left 94px
+  .mejs-controls
+    bottom auto
+    top 0
+    height 95px
+    background-color #fff
+    border 1px solid $gray-bd
+  .mejs-inner
+    padding-top 120px
+    position relative
+  .mejs-container
+    background none
+    li
+      color #082e41
+  .mejs-nexttrack-button
+    width: 27px !important
+    height: 28px !important
+    position absolute
+    left 50%
+    top 19px
+    z-index 20
+    margin-left 29px !important
+    button
+      background: url('../images/sprite.png') no-repeat -227px -292px;
+      width 100%
+      height 100%
+      margin 0
+  .mejs-prevtrack-button
+    width: 27px !important
+    height: 29px !important
+    position absolute
+    left 50%
+    top 19px
+    z-index 20
+    margin-left -55px !important
+    button
+      width 100%
+      height 100%
+      margin 0
+      background: url('../images/sprite.png') no-repeat -132px -292px;
+  .mejs-playpause-button
+    width: 36px !important;
+    height: 36px !important;
+    position absolute
+    left 50%
+    top 15px
+    z-index 20
+    margin-left -18px !important
+    button
+      width 100%
+      height 100%
+      margin 0
+      background: url('../images/sprite.png') no-repeat -175px -339px;
+    &.mejs-pause
+      button
+        background-position -175px -292px
+  .mejs-controls
+    padding-left 20px
+    padding-right 20px
+    *
+      outline none !important
+    div.mejs-time-rail,
+    .mejs-time-total.mejs-time-slider,
+    .mejs-time-rail span,
+    .mejs-time-rail a
+      position static !important
+    div.mejs-time-rail
+      padding-top 0
+      margin-top 70px
+    .mejs-time-total,
+    .mejs-time-rail span,
+    .mejs-time-rail a
+      height 5px !important
+      background-color #b5e0ff
+    .mejs-time-current
+      margin-top -5px
+      border-radius 0
+      background #082e41 !important
+  .mejs-time-float
+    display none !important
+  .mejs-currenttime-container,
+  .mejs-duration-container
+    position absolute
+    top 25px
+    font-size 12px
+    font-weight 100
+    cursor default
+    span
+      color #a5a5a5 !important
+  .mejs-currenttime-container
+    right 50px
+  .mejs-duration-container
+    right 15px
+  .mejs-time.mejs-duration-container:before
+    color #a5a5a5 !important
+  .mejs-playlist
+    li
+      position relative
+      height 65px
+      font-size 14px
+      overflow visible
+      padding-top 17px
+      &:after
+        content ''
+        position absolute
+        left 0
+        bottom 20px
+        width 100%
+        height 5px
+        background-color #b5e0ff
+      &:before
+        content ''
+        background: url('../images/sprite.png') no-repeat -175px -339px;
+        width: 36px;
+        height: 36px;
+        position absolute
+        left -80px
+        top 50%
+        margin-top -(@height/2)
+      .track-artist
+        color #082e41
+      .track-title-player
+        color #555555
+      .track-dur
+        position absolute
+        right 0
+        top 18px
+        color #a5a5a5
+        font-weight 100
+        font-size 12px
+  .mejs-playlist
+    .current
+      background-color #f5fafd
+      &:after
+        width 400%
+        left -200%
+        top 0
+        height 100%
+        z-index -1
+        background-color #f5fafd
+      &.paused
+        &:before
+          background-position -175px -292px
+.profile-audio
+  padding-left 0 !important
+  margin-left 0 !important
+  .profile-images
+    border-top none
+  .tabs
+    a
+      font-size 18px
+      font-weight 500
+      margin-bottom 10px
+  .albums
+    .item
+      .title
+        padding-left 35%
+        text-align left
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat -6px -222px;
+          width: 22px;
+          height: 28px;
+          position absolute
+          left 20%
+          top 50%
+          margin-top -(@height/2)
+  .large-audio .mejs-inner
+    padding-top 165px
+  .add-to-albums
+    position absolute
+    right 240px
+    top 115px
+    a
+      position relative
+      z-index 20
+      display block
+      width 150px
+      height 30px
+      border 1px solid #b5e0ff
+      color $black
+      border-radius 5px
+      font-size 12px
+      line-height 28px
+      text-align center
+      padding-left 20px
+      anim()
+      &:after
+        background: url('../images/sprite.png') no-repeat -194px -24px;
+        width: 14px;
+        height: 14px;
+        position absolute
+        left 30px
+        top 50%
+        margin-top -(@height/2)
+        content ''
+      &:hover
+        background-color #b5e0ff
+  .add-to-favourite
+    position absolute
+    right 0
+    top 115px
+    a
+      position relative
+      z-index 20
+      display block
+      width 210px
+      height 30px
+      border 1px solid $yellow
+      color $black
+      border-radius 5px
+      font-size 12px
+      line-height 28px
+      text-align center
+      padding-left 20px
+      anim()
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -152px -24px;
+        width: 13px;
+        height: 12px;
+        position absolute
+        left 30px
+        top 50%
+        margin-top -(@height/2)
+      &:hover
+        background-color $yellow
+.profile-audio-inner
+  position relative
+  margin-top 30px
+.profile-audio
+  .lead-photos.images
+    display block !important
+  .audio-info
+    text-align center
+    border 1px solid $gray-bd
+    padding-top 20px
+    padding-left 10px
+    padding-right 10px
+    ul
+      text-align center
+    li
+      display inline-block
+      margin-bottom 5px
+      a
+        font-size 12px
+        color #333333
+        margin-right 5px
+        &:hover
+          text-decoration underline
+    .image-slider-footer
+      margin-bottom 0
+      padding-bottom 20px
+    .image-slider-footer .details,
+    .image-slider-footer .share
+      float none
+      display inline-block
+      margin-top 10px
+    .image-slider-footer .share
+      width 100%
+    .image-slider-footer .date
+      text-align left

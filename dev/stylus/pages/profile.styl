@@ -1,0 +1,507 @@
+.profile
+  position relative
+  margin-top -40px
+  padding-left 205px
+  clearfix()
+.profile-menu
+  position absolute
+  left -55px
+  top 0
+  width 260px
+  height 100%
+  background-color $gray-bg
+  border-right 1px solid $gray-bd
+  ul
+    position relative
+    z-index 10
+  li
+    height 50px
+    line-height 50px
+    background-color $gray-bg
+    a
+      position relative
+      display block
+      width 100%
+      height 100%
+      font-size 14px
+      font-weight 500
+      color #082e41
+      padding-left 70px
+      border-bottom 1px solid $gray-bd
+      anim()
+      &:hover
+        background-color #ebf5fb
+  .icon:after
+    content ''
+    position absolute
+    left 30px
+    top 50%
+  .messages:after
+    background: url('../images/sprite.png') no-repeat -39px -451px;
+    width: 20px;
+    height: 14px;
+    margin-top -(@height/2)
+  .friends:after
+    background: url('../images/sprite.png') no-repeat -65px -451px;
+    width: 20px;
+    height: 20px;
+    margin-top -(@height/2)
+  .blog:after
+    background: url('../images/sprite.png') no-repeat -93px -451px;
+    width: 20px;
+    height: 20px;
+    margin-top -(@height/2)
+  .images:after
+    background: url('../images/sprite.png') no-repeat -118px -451px;
+    width: 20px;
+    height: 16px;
+    margin-top -(@height/2)
+  .videos:after
+    background: url('../images/sprite.png') no-repeat -142px -451px;
+    width: 20px;
+    height: 13px;
+    margin-top -(@height/2)
+  .audios:after
+    background: url('../images/sprite.png') no-repeat -165px -451px;
+    width: 19px;
+    height: 20px;
+    margin-top -(@height/2)
+  .pref:after
+    background: url('../images/sprite.png') no-repeat -190px -451px;
+    width: 21px;
+    height: 20px;
+    margin-top -(@height/2)
+.messages-search,
+.messages-header
+  position relative
+  height 50px
+  line-height 50px
+  background-color #082e41
+  padding-left 35px
+  padding-right 35px
+  label, .input
+    display inline-block
+    vertical-align top
+  label
+    position absolute
+    left 35px
+    top 0
+    color #fff
+    font-size 14px
+    font-weight 500
+    margin-right 35px
+  .input
+    width 100%
+    padding-left 95px
+    padding-right 35px
+  .inp-text
+    height 23px
+    border 1px solid #77ffff
+    border-radius 10px
+    width 100%
+    padding-left 20px
+    padding-right 20px
+  .inp-submit
+    position absolute
+    right 35px
+    top 50%
+    width 18px
+    height 19px
+    margin-top -(@height/2)
+    border none
+    background url(../images/search-blue.png) 0 0 no-repeat
+    text-indent -9999px
+
+.messages-item
+  position relative
+  display block
+  height 100px
+  padding-left 35px
+  padding-right 35px
+  border-bottom 1px solid $gray-bd
+  background-color #fff
+  anim()
+  &:hover
+    background-color #ebf5fb
+  &.new
+    background-color #ebf5fb
+    &:hover
+      background-color #ebf5fb - 5%
+  .user
+    position absolute
+    left 35px
+    top 50%
+    margin-top -22.5px
+  .header
+    padding-top 30px
+    padding-left 70px
+  .user-name
+    display inline-block
+    color #082e41
+    font-size 14px
+    font-weight 500
+  .msg-date
+    display inline-block
+    margin-left 40px
+    color $black
+    font-weight 100
+    font-size 12px
+  .msg
+    padding-left 70px
+    padding-top 20px
+    color $black
+    font-size 14px
+    max-height 34px
+    overflow hidden
+    line-height 1
+    padding-right 35px
+  .msg-c
+    position absolute
+    right 35px
+    top 50%
+    width 30px
+    height 30px
+    line-height 28px
+    border 1px solid #1b3e50
+    color #1b3e50
+    text-align center
+    margin-top -(@height/2)
+    border-radius 50%
+    font-weight 700
+    outline none
+.container
+  overflow hidden
+.profile-menu:after
+  content ''
+  position absolute
+  left 0
+  bottom -4000px
+  width 100%
+  height 4000px
+  background-color #f5f5f5
+.messages-header
+  font-size 14px
+  color #fff
+  span
+    display inline-block
+    vertical-align top
+    position relative
+  span.online,
+  span.busy
+    &:after
+      content ''
+      display block
+      width 7px
+      height 7px
+      border-radius 50%
+      position absolute
+      right -20px
+      top 10px
+  span.online:after
+    background-color $online
+  span.busy:after
+    background-color $red
+.messages-personal
+  padding 30px 35px
+  clearfix()
+  .message
+    display block
+    width 100%
+    margin-bottom 40px
+    font-size 14px
+    .message-date
+      position absolute
+      left 30px
+      bottom -25px
+      font-size 12px
+      font-weight 100
+      color #2c2c2c
+      &:after
+        content ''
+        width 3px
+        height 3px
+        border-radius 50%
+        background-color $black
+        position absolute
+        left -15px
+        top 50%
+        margin-top -(@height/2)
+    .message-content
+      .attached
+        margin-top 10px
+        a
+          display inline-block
+          margin-bottom 10px
+          margin-left 5px
+          margin-right 5px
+        img
+          max-width 160px
+    .msg-wrp
+      position relative
+      display inline-block
+      border 1px solid $gray-bd
+      padding 20px
+      margin-left 55px
+      &:after
+        content ''
+        position absolute
+        top -1px
+        width 16px
+        height 13px
+    &.coming
+      text-align right
+      .msg-wrp
+        margin-right 65px
+        &:after
+          background url(../images/msg-arrow-right.png) 0 0 no-repeat
+          right -16px
+      .user
+        position absolute
+        right -65px
+        top -10px
+    &.incoming
+      .msg-wrp
+        border-color #b8ffff
+        &:after
+          background url(../images/msg-arrow-left.png) 0 0 no-repeat
+          left -16px
+      .user
+        position absolute
+        left -65px
+        top -10px
+@keyframes typing
+  0%
+    transform translateX(0)
+  50%
+    transform translateX(6px)
+  100%
+    transform translateX(0px)
+.messages-typing
+  font-style italic
+  padding 15px 60px
+  position relative
+  color #868686
+  cursor default
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -232px -47px;
+    width: 13px;
+    height: 13px;
+    position absolute
+    left 40px
+    top 50%
+    margin-top -(@height/2)
+    animation-name typing
+    animation-duration 2s
+    animation-iteration-count infinite
+.messages-input
+  position relative
+  height 75px
+  clearfix()
+  .submit
+    position absolute
+    right 0
+    top 0
+    width 260px
+    line-height 75px
+    border-top 1px solid $gray-bd
+    height 100%
+    padding-left 25px
+    padding-right 25px
+    text-align center
+    .upload-file
+      display inline-block
+      vertical-align middle
+      width 30px
+      height 30px
+      border 1px solid #0e3345
+      border-radius 50%
+      &:hover
+        background #ebf5fb
+      &:after
+        background: url('../images/sprite.png') no-repeat -170px -47px;
+        width: 12px;
+        height: 13px;
+        left 50%
+        top 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+      input
+        position relative
+        z-index 20
+        width 30px !important
+        height 30px !important
+        border-radius 50%
+    .send
+      display inline-block
+      vertical-align middle
+      border 1px solid #0e3345
+      width 140px
+      height 30px
+      line-height 28px
+      text-align center
+      border-radius 5px
+      margin-left 25px
+      a
+        display block
+        width 100%
+        height 100%
+        color #0e3345
+      &:hover
+        background-color #0e3345
+        a
+          color #fff
+  .textarea
+    width 100%
+    padding-right 260px
+    textarea
+      width 100%
+      resize none
+      height 75px
+      max-height 75px
+      max-width 100%
+      min-width 100%
+      min-height 75px
+      border 1px solid $gray-bd
+      border-left none
+      padding 20px 45px
+      font-size 14px
+      font-family: 'Ubuntu', serif;
+      font-weight: 400;
+      anim()
+      &:hover, &:focus
+        background-color #ebf5fb
+.profile-lead
+  position relative
+  z-index 10
+  padding-top 15px
+  padding-bottom 18px
+  border-bottom 1px solid $gray-bd
+  text-align center
+  .image
+    height 160px
+    margin-bottom 20px
+    border-radius 50%
+    a
+      display block
+      width 160px
+      height 160px
+      border 3px solid #fff
+      background-repeat no-repeat
+      background-position 50%
+      background-size cover
+      margin 0 auto
+      border-radius 50%
+  .name
+    font-size 24px
+    line-height 1
+    padding-bottom 15px
+    a
+      color #082e41
+      font-weight 500
+      &:hover
+        text-decoration underline
+  .status
+    position relative
+    display inline-block
+    font-size 12px
+    font-weight 100
+    padding-left 20px
+    margin-bottom 10px
+    cursor default
+    &.online,
+    &.busy
+      &:after
+        content ''
+        width 10px
+        height 10px
+        position absolute
+        left 0
+        top 50%
+        border-radius 50%
+        margin-top -(@height/2)
+    &.online:after
+      background-color $online
+    &.busy:after
+      background-color $red
+  .load-userpic
+    border-top 1px solid $gray-bd
+    padding-top 20px
+    padding-bottom 5px
+    a
+      position relative
+      display block
+      height 30px
+      line-height 26px
+      width 210px
+      border 1px solid #082e41
+      border-radius 5px
+      margin 0 auto
+      color #082e41
+      padding-left 25px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -222px -451px;
+        width: 16px;
+        height: 13px;
+        position absolute
+        left 25px
+        top 50%
+        margin-top -(@height/2)
+      &:hover
+        background-color #082e41
+        color #fff
+        &:after
+          background-position -222px -473px
+.profile-user-info.no-bdr
+  border-right none
+.profile-images
+  border-top 1px solid $gray-bd
+  padding-top 30px
+  .header
+    margin-bottom 30px
+    a
+      color #8d8d8d
+      display inline-block
+      margin-right 35px
+      vertical-align middle
+      .total
+        color #082e41
+        font-size 14px
+        font-weight 500
+        display inline-block
+        margin-left 3px
+      &.current
+        color #555
+        span:first-child
+          text-decoration underline
+      &:hover span:first-child
+        text-decoration underline
+
+  .lead-photos
+    clearfix()
+  .item
+    position relative
+    float left
+    margin-left 4%
+    margin-bottom 4%
+    width 30.6%
+    &:nth-child(3n+1)
+      margin-left 0
+      clear left
+  .lead-photos.albums
+    display none
+  .lead-photos.videos
+    .item
+      width 46.5%
+      margin-left 7%
+      &:nth-child(3n+1)
+        margin-left 7%
+        clear none
+      &:nth-child(2n+1)
+        margin-left 0
+        clear left
+      .lenght
+        float right
+        padding 10px 0
+        color $black

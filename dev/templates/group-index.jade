@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    title Сообщества - Главная
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-group-index
+      main
+        //- a(href="#").desktop-version ПЕРЕЙТИ НА ПОЛНУЮ ВЕРСИЮ САЙТА
+        section.content
+          .sidebar-groups
+            .lead(style="background-image: url(../images/content/groups/group-background.png)")
+              .logo: img(src="../images/content/groups/group-icon.png" alt="")
+              .lead-title Астана – арман қала!
+            .members <span>3678</span> фанатов
+            .info
+              .date 34 дней назад
+              .admin: a(href="#") Admin
+            .join
+              a(href="#") Вступить в сообщество
+          .group-posts.wr
+            .total-post 4 записи
+            .group-posts-list
+              .group-post
+                .date 7 дней назад:
+                .post-header
+                  .icon: a(href="#" style="background-image: url(../images/content/groups/group-icon.png)")
+                  .info
+                    a(href="#").author-post Астана - арман қала
+                    span добавил запись:
+                .post-body
+                  .type-icon.edit: a(href="#")
+                  article
+                    h4 “Какой будет Астана к концу 2015-го года?”
+                    p С каждым годом планы на застройку Астаны становятся все более грандиозными. Обзор объектов, которые появятся в казахстанской столице до конца 2015 года, представляет <a href="#">kn.kz</a>.
+                    .attached
+                      table.images
+                        tr
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/1.jpg)")
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/2.jpg)")
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/3.jpg)")
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/4.jpg)")
+                .post-footer
+                  .viewed-icon-inner 824
+                  .comments-icon-inner: a(href="#") 12
+                  .likes-icon-inner: a(href="#") 250
+              .group-post
+                .date 9 дней назад:
+                .post-header
+                  .icon: a(href="#" style="background-image: url(../images/content/groups/group-icon.png)")
+                  .info
+                    a(href="#").author-post Астана - арман қала
+                    span добавил запись:
+                .post-body
+                  .type-icon.edit: a(href="#")
+                  article
+                    h4 В Астане с 26 июля произведут запуск отдельных полос для общественного транспорта
+                    p C 26 июля 2015 года по городу Астана будет произведен запуск первого этапа отдельных выделенных  полос «BUS LANE» для движения городского общественного транспорта.
+                    .attached
+                      table.images
+                        tr
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/5.jpg)")
+                .post-footer
+                  .viewed-icon-inner 824
+                  .comments-icon-inner: a(href="#") 12
+                  .likes-icon-inner: a(href="#") 250
+              .group-post
+                .date 9 дней назад:
+                .post-header
+                  .icon: a(href="#" style="background-image: url(../images/content/groups/group-icon.png)")
+                  .info
+                    a(href="#").author-post Астана - арман қала
+                    span добавил запись:
+                .post-body
+                  .type-icon.edit: a(href="#")
+                  article
+                    h4 В Астане с 26 июля произведут запуск отдельных полос для общественного транспорта
+                    p C 26 июля 2015 года по городу Астана будет произведен запуск первого этапа отдельных выделенных  полос «BUS LANE» для движения городского общественного транспорта.
+                    .attached
+                      table.images
+                        tr
+                          td
+                            .image: a(href="#" style="background-image: url(../images/content/attached/5.jpg)")
+                .post-footer
+                  .viewed-icon-inner 824
+                  .comments-icon-inner: a(href="#") 12
+                  .likes-icon-inner: a(href="#") 250
+      include includes/fixed-nav
+    include includes/scripts

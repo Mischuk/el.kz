@@ -1,0 +1,381 @@
+.profile-main
+  position relative
+  padding-right 269px
+.profile-user-info
+  background-color #f5fafd
+  padding-left 90px
+  padding-right 90px
+  padding-top 40px
+  padding-bottom 15px
+  color #082e41
+  border-right 1px solid $gray-bd
+  min-height 257px
+  .quote
+    position relative
+    font-size 15px
+    font-style italic
+    color #1e4153
+    padding-bottom 25px
+    border-bottom 1px solid #1e4153
+    margin-bottom 20px
+    &:before
+      content ''
+      background: url('../images/sprite.png') no-repeat -253px -451px;
+      width: 17px;
+      height: 11px;
+      position absolute
+      left -45px
+      bottom 20px
+    &:after
+      content ''
+      position absolute
+      right -45px
+      top -5px
+      background: url('../images/sprite.png') no-repeat -280px -451px;
+      width: 17px;
+      height: 11px;
+  .gender, .age, .locate
+    position relative
+    margin-bottom 20px
+    font-size 14px
+    cursor default
+    &:after
+      content ''
+      position absolute
+      left -45px
+      top 50%
+    .title
+      font-weight 600
+      margin-right 5px
+  .gender:after
+    background: url('../images/sprite.png') no-repeat -307px -451px;
+    width: 16px;
+    height: 16px;
+    margin-top -(@height/2)
+  .age:after
+    background: url('../images/sprite.png') no-repeat -334px -451px;
+    width: 16px;
+    height: 16px;
+    margin-top -(@height/2)
+  .locate:after
+    background: url('../images/sprite.png') no-repeat -358px -451px;
+    width: 12px;
+    height: 16px;
+    margin-top -(@height/2)
+  .toggle-info
+    a
+      position relative
+      color $gray
+      anim()
+      &:hover
+        text-decoration underline
+      &:after
+        content ''
+        position absolute
+        right -20px
+        top 50%
+        width 15px
+        height 15px
+        border 1px solid $gray
+        border-radius 50%
+        margin-top -(@height/2)
+      &:before
+        background: url('../images/sprite.png') no-repeat -129px -9px;
+        width: 7px;
+        height: 3px;
+        content ''
+        position absolute
+        right -16px
+        top 50%
+        margin-top -(@height/2)
+        anim()
+      &.opened:before
+        transform rotate(180deg)
+
+
+.profile-add-post,
+.profile-user-wall
+  border-right 1px solid $gray-bd
+.profile-add-post
+  .submit
+    border-bottom 1px solid $gray-bd
+.profile-user-wall
+  padding-bottom 30px
+  padding-left 45px
+  padding-right 45px
+  padding-top 40px
+
+.profile-user-wall-item
+  margin-bottom 40px
+  .link
+    display inline-block
+    font-size 14px
+    color #082e41
+    font-weight 500
+    line-height 35px
+    margin-bottom 20px
+    &:hover
+      text-decoration underline
+    .user-name
+      position absolute
+      left 170px
+      height 45px
+      line-height 45px
+      top 0
+      color #082e41
+      font-size 14px
+      font-weight 500
+      &:hover
+        text-decoration underline
+  .community-lead
+    clearfix()
+    margin-left -45px
+    .image
+      width 265px
+      float left
+      a
+        display block
+        width 100%
+    .intro
+      padding-left 280px
+      line-height 1.2
+      padding-right 30px
+      cursor default
+.profile-main
+  .profile-lead
+    display none
+.profile-articles
+  .total-post
+    padding-top 40px
+    font-size: 18px;
+    color: #082e41;
+    font-weight: 500;
+    margin-bottom: 30px;
+  .group-list .image
+    background-size cover
+    background-position top center
+  .viewed-icon-inner,
+  .comments-icon-inner
+    position relative
+    float left
+    padding-left 20px
+    margin-right 20px
+    font-size 12px
+    cursor default
+    a
+      position relative
+      color $black
+      cursor default
+  .lead-article
+    margin-top 0
+  article + .footer
+    clearfix()
+  .footer
+    .date
+      float left
+      padding-left 15px
+      position relative
+      cursor default
+      &:after
+        content ''
+        width: 12px;
+        height: 12px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+        background: url('../images/sprite.png') no-repeat -214px -24px;
+  .user-comments > section
+    position relative
+  .user-comments .header .custom-select
+    position absolute
+    right 30px
+    top 20px
+  .post-comment form .upload-file, .post-comment form .send
+    margin-bottom 10px
+  .post-comment form .inp-submit
+    margin-left 0
+  .post-comment form .upload-file
+    margin-right 10px
+.profile-user-wall-item
+  .audio-post
+    article
+      padding 0
+.profile-images
+  .search.blue
+    form
+      padding-left 0
+      padding-right 40px
+      margin-bottom 30px
+    .inp-text
+      border-color #a8c6db
+    .inp-submit
+      right -5px
+      background-image url(../images/search-blue-light.png)
+  .albums
+    .item
+      overflow hidden
+      border-radius 10px
+      a:after
+        content ''
+        position absolute
+        left 0
+        top 0
+        height 85px
+        width 100%
+        background-color $black-rgba
+    .time
+      position absolute
+      right 15px
+      bottom 0
+    .title
+      color #fff
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 85px
+      display table
+      text-align center
+      font-size 18px
+      font-weight 500
+      z-index 20
+  .audio-tab
+    .item
+      width 100%
+      margin-left 0
+.new-user-options
+  position relative
+  z-index 20
+  border-bottom 1px solid $gray-bd
+  text-align center
+  a
+    width 210px
+    height 30px
+    line-height 28px
+    border-radius 10px
+    display block
+    margin 20px auto 20px auto
+  .add-friend a
+    padding-left 25px
+    position relative
+    border 1px solid #3d3d3d
+    color #3d3d3d
+    &:after
+      content ''
+      left 20px
+      top 50%
+      background: url('../images/sprite.png') no-repeat -276px -395px;
+      width: 16px;
+      height: 16px;
+      margin-top -(@height/2)
+      position absolute
+    &:hover
+      color #082e41
+      border-color #082e41
+      &:after
+        background-position -296px -395px
+  .add-message a
+    padding-left 25px
+    position relative
+    border 1px solid #3d3d3d
+    color #3d3d3d
+    &:after
+      content ''
+      left 20px
+      top 50%
+      background: url('../images/sprite.png') no-repeat -318px -395px;
+      width: 16px;
+      height: 11px;
+      margin-top -(@height/2)
+      position absolute
+    &:hover
+      color #082e41
+      border-color #082e41
+      &:after
+        background-position -339px -395px
+.friends-filter
+  padding-left 25px
+  padding-right 25px
+  clearfix()
+  h3
+    font-weight bold !important
+    margin-top 20px
+    margin-bottom 20px
+  label
+    display block
+    font-weight 500
+    color #082e41
+    margin-bottom 5px
+    margin-top 20px
+  .select
+    width 100%
+  .styledSelect
+    border-color $gray-bd
+    overflow hidden
+  &.half
+    .custom-select
+      width 45%
+      margin-right 10%
+      float left
+      &:last-child
+        margin-right 0
+  .radio-custom
+    display block
+    width 100%
+    text-align left
+    margin-bottom 5px
+    margin-top 10px
+  .apply-filters
+    display block
+    width 120px
+    height 25px
+    line-height 23px
+    border 1px solid #082e41
+    color #082e41
+    text-align center
+    margin 20px auto
+    border-radius 5px
+    anim()
+    &:hover
+      background-color #082e41
+      color #fff
+.friend-item
+  float left
+  width 33.333%
+  margin-bottom 30px
+  .image
+    display block
+    width 85px
+    height 85px
+    margin 0 auto
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size cover
+    border-radius 50%
+    border 2px solid #4cbaf2
+    overflow hidden
+    margin-bottom 10px
+  .friend-name
+    text-align center
+    margin-bottom 10px
+    a
+      font-size 15px
+      color #082e41
+      &:hover
+        text-decoration underline
+  .add-to-friend
+    text-align center
+    a
+      display inline-block
+      border 1px solid #b8b8b8
+      color #b8b8b8
+      width 120px
+      height 25px
+      line-height 23px
+      border-radius 5px
+      font-size 10px
+    &.active a
+      color #082e41
+      border-color #082e41
+      cursor default

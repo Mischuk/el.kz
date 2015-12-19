@@ -1,0 +1,146 @@
+doctype html
+html
+  head
+    title Профиль
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile-audio
+      main
+        section.content
+          .profile
+            .profile-menu
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-of.png)")
+                .name: a(href="#") Джон Сноу
+                .status.online Онлайн
+              .new-user-options
+                .add-friend: a(href="#") Добавить в друзья
+                .add-message: a(href="#") Написать сообщение
+              ul
+                li: a(href="#").icon.friends Друзья
+                li: a(href="#").icon.blog Блог
+                li: a(href="#").icon.images Фотоальбомы
+                li: a(href="#").icon.videos Видеозаписи
+                li: a(href="#").icon.audios Аудиозаписи
+            .profile-main
+              .profile-user-info
+                .quote Я буду жить и умру на своем посту. Я - меч во тьме; я - Дозорный на Стене; я огонь, который разгоняет холод; я - свет, который приносит рассвет; я - рог, который будит спящих; я - щит, который охраняет царство людей.
+                .gender
+                  span.title Пол:
+                  span женский
+                .age
+                  span.title Возраст:
+                  span 28 лет
+                .locate
+                  span.title Местожительство:
+                  span Казахстан, Акмолинская область, Астана
+                .hide.profile-user-info-hidden
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                .toggle-info: a(href="#") показать подробную информацию
+              .profile-images.wr
+                .header
+                  .tabs
+                    a(href="#" class="all-images current")
+                      span мои аудиозаписи
+                      span.total (6)
+                    a(href="#" class="all-albums")
+                      span мои альбомы
+                      span.total (6)
+                .playlist
+                  .search.blue
+                    form
+                      input(type="text" placeholder="поиск песни или альбома").inp-text
+                      input(type="submit" value="").inp-submit
+                .lead-photos.images.audio-tab
+                  .track-description
+                    .track-cover(style="background-image: url(../images/content/artist.jpg)")
+                    .track-title
+                      .artist Air Review
+                      .song Chasing Corporate
+                  #mediawrapper-main.large-audio
+                    audio(id="mejs-main" type="audio/mp3" controls="controls")
+                      Source(src="../mp3/8.mp3" title="<div class='track-dur'>04:02</div><b class='track-artist'>Air Review</b> - <span class='track-title-player'>Chasing Corporate</span>")
+                      Source(src="../mp3/2.mp3" title="<div class='track-dur'>03:22</div><b class='track-artist'>Air Review</b> - <span class='track-title-player'>All Because You're Mine</span>")
+                      Source(src="../mp3/3.mp3" title="<div class='track-dur'>02:33</div><b class='track-artist'>Chris</b> - <span class='track-title-player'>Chasing Cars(Cover)</span>")
+                      Source(src="../mp3/4.mp3" title="<div class='track-dur'>05:23</div><b class='track-artist'>SmallCityLights</b> - <span class='track-title-player'>New Distance</span>")
+                      Source(src="../mp3/7.mp3" title="<div class='track-dur'>06:44</div><b class='track-artist'>Jamie Ray</b> - <span class='track-title-player'>I got you</span>")
+                      Source(src="../mp3/6.mp3" title="<div class='track-dur'>03:21</div><b class='track-artist'>Chris</b> - <span class='track-title-player'>When You're Gone Cover</span>")
+                .lead-photos.albums
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/4.jpg)")
+                      .title: .helper Die Antwoord
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/4.jpg)")
+                      .title: .helper ONE OK ROCK
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/4.jpg)")
+                      .title: .helper Radiohead
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/2.jpg)")
+                      .title: .helper Сплин
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/2.jpg)")
+                      .title: .helper Artctic Monkeys
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+                  .item
+                    a(href="#")
+                      .image(style="background-image:url(../images/content/items/1.jpg)")
+                      .title: .helper Maroon 5
+                    .footer
+                      .comments-icon: span 5
+                      .likes-icon: span 2
+                      .time 02:25
+      include includes/fixed-nav
+    include includes/scripts

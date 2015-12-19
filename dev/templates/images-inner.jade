@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    title Сообщества - Главная
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile-images-logos
+      main
+        section.content
+          .images-albums.wr
+            h2.headling Шығыс Қазақстан облысының таулары
+            .image-slider
+              .slide(style="background-image: url(../images/content/carousel/1.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/2.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/3.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/4.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/5.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/6.jpg)")
+              .slide(style="background-image: url(../images/content/carousel/7.jpg)")
+            .image-slider-footer
+              .details
+                .date 11.12.2015, 02:24
+                .posted Admin
+                .comments-icon-inner: a(href="#") 1
+                .viewed-icon-inner 12
+              .share
+                span Поделиться:
+                a(href="#").facebook
+                a(href="#").twitter
+                a(href="#").youtube
+                a(href="#").tumblr
+            h2.headling ДРУГИЕ ФОТО ИЗ ЭТОГО АЛЬБОМА
+            .image-slider-nav
+              .slide
+                .image(style="background-image: url(../images/content/carousel/1.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/2.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/3.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/4.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/5.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/6.jpg)")
+              .slide
+                .image(style="background-image: url(../images/content/carousel/7.jpg)")
+            .user-comments
+              section
+                .header
+                  h3.headling Комментарии
+                  .custom-select
+                    select
+                      option сначала новые
+                      option сначала старые
+                .post-comment
+                  .user.online
+                    a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                  form
+                    textarea.inp-text(placeholder="присоедениться к обсуждению")
+                    .bottom-form
+                      .upload-file
+                        span Прикрепить
+                        input(type="file" name="photo")
+                      .send: input(type="submit" value="Отправить").inp-submit
+                .user-comments-list
+                  .item
+                    .user.busy
+                      a(href="#" style="background-image: url(../images/content/userpics/3.png)")
+                    section
+                      .header
+                        a(href="#").user-name Батыр
+                        span.date 3 месяца назад
+                      .body Сұхбат өте өзекті мәселелер төңірегінде орбиген. Жастарды искерликке шақыратын, қалай табысқа жетугеболатынын көрсететін немесе ғылым изденуге қызықтырыпбағдарламалар керекті. Теледидар шоу бағдарламаларға толы, сондықтан жастардың кобшилиги әнші немесе шоу мен болуды армандайды. Бизде жастарға насихат жетіспеуде деп ойлаймын.
+                      .footer
+                        .like: a(href="#") 15
+                        .dislike: a(href="#") 2
+                        .share: a(href="#") 3
+      include includes/fixed-nav
+    include includes/scripts

@@ -1,0 +1,179 @@
+doctype html
+html
+  head
+    title Профиль
+    include includes/head
+  body
+    .container
+      include includes/header
+      main
+        section.content
+          .profile
+            .profile-menu
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-icon-large.png)")
+                .name: a(href="#") Жанар Дугалова
+                .status.online Онлайн
+                .load-userpic: a(href="#") Изменить аватар
+              ul
+                li: a(href="#").icon.messages Мои сообщения
+                li: a(href="#").icon.friends Мои друзья
+                li: a(href="#").icon.blog Мой блог
+                li: a(href="#").icon.images Мои фотоальбомы
+                li: a(href="#").icon.videos Мои видеозаписи
+                li: a(href="#").icon.audios Мои аудиозаписи
+                li: a(href="#").icon.pref Настройка профиля
+            .profile-main
+              .profile-lead
+                .image: a(href="#" style="background-image:url(../images/content/user-icon-large.png)")
+                .name: a(href="#") Жанар Дугалова
+                .status.online Онлайн
+                .load-userpic: a(href="#") Изменить аватар
+              .profile-user-info
+                .quote Я буду жить и умру на своем посту. Я - меч во тьме; я - Дозорный на Стене; я огонь, который разгоняет холод; я - свет, который приносит рассвет; я - рог, который будит спящих; я - щит, который охраняет царство людей.
+                .gender
+                  span.title Пол:
+                  span женский
+                .age
+                  span.title Возраст:
+                  span 28 лет
+                .locate
+                  span.title Местожительство:
+                  span Казахстан, Акмолинская область, Астана
+                .hide.profile-user-info-hidden
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                  .gender
+                    span.title Пол:
+                    span женский
+                  .age
+                    span.title Возраст:
+                    span 28 лет
+                  .locate
+                    span.title Местожительство:
+                    span Казахстан, Акмолинская область, Астана
+                .toggle-info: a(href="#") показать подробную информацию
+              .profile-add-post
+                .messages-input
+                  .textarea: textarea(placeholder="Добавить запись")
+                  .submit
+                    .upload-file
+                      span
+                      input(type="file")
+                    .send: a(href="#") Отправить
+              .profile-user-wall
+                .profile-user-wall-item
+                  .group-post.type-communities
+                    .date 7 дней назад:
+                    .post-header
+                      .icon: a(href="#" style="background-image: url(../images/content/user-icon-large.png)")
+                      .info
+                        a(href="#").author-post Жанар Дугалова
+                        span вступила в новую группу:
+                    .post-body
+                      .type-icon.communities
+                        a(href="#")
+                      a(href="#").link Жанар Дугалова FUNCLUB
+                      .community-lead
+                        .image: a(href="#"): img(src="../images/content/lead-community.png", alt="")
+                        .intro В Казани завершился финал международного конкурса Turkvizyon-2014. Казахстан представляла певица Жанар Дугалова. По итогам голосования наша соотечественница набрала наивысший балл – 225. Победительницу поздравил президент Татарстана Рустам Минниханов.
+                    .post-footer
+                      .likes-icon-inner: a(href="#") 250
+                      .comments-icon-inner: a(href="#") 12
+                      .shares-icon-inner: a(href="#") 234
+                .profile-user-wall-item
+                  .group-post
+                    .date 7 дней назад:
+                    .post-header
+                      .icon: a(href="#" style="background-image: url(../images/content/user-icon-large.png)")
+                      .info
+                        a(href="#").author-post Жанар Дугалова
+                        span теперь дружит с
+                    .post-body
+                      .type-icon.friend
+                        a(href="#")
+                      .link
+                        .user
+                          a(href="#" style="background-image: url(../images/content/userpics/1.png)")
+                        a(href="#").user-name Айдана Меденова
+                .profile-user-wall-item
+                  .group-post
+                    .date 7 дней назад:
+                    .post-header
+                      .icon: a(href="#" style="background-image: url(../images/content/user-icon-large.png)")
+                      .info
+                        a(href="#").author-post Жанар Дугалова
+                        span добавила запись:
+                    .post-body
+                      .type-icon.edit: a(href="#")
+                      article
+                        h4 “Какой будет Астана к концу 2015-го года?”
+                        p С каждым годом планы на застройку Астаны становятся все более грандиозными. Обзор объектов, которые появятся в казахстанской столице до конца 2015 года, представляет <a href="#">kn.kz</a>.
+                        .attached
+                          table.images
+                            tr
+                              td
+                                .image: a(href="#" style="background-image: url(../images/content/attached/1.jpg)")
+                              td
+                                .image: a(href="#" style="background-image: url(../images/content/attached/2.jpg)")
+                              td
+                                .image: a(href="#" style="background-image: url(../images/content/attached/3.jpg)")
+                              td
+                                .image: a(href="#" style="background-image: url(../images/content/attached/4.jpg)")
+                    .post-footer
+                      .likes-icon-inner: a(href="#") 250
+                      .comments-icon-inner: a(href="#") 12
+                      .shares-icon-inner: a(href="#") 234
+                .profile-user-wall-item
+                  .group-post
+                    .date 7 дней назад:
+                    .post-header
+                      .icon: a(href="#" style="background-image: url(../images/content/user-icon-large.png)")
+                      .info
+                        a(href="#").author-post Жанар Дугалова
+                        span добавила запись:
+                    .post-body
+                      .type-icon.notes: a(href="#")
+                      article
+                        p Хочу пожелать семейного благополучия, тем, у кого нет семьи, – чтобы они обрели ее. С каждым годом все больше понимаешь, что самое важное в жизни, чем бы ты ни занимался, – это семья. Потому что в конечном итоге ты больше всего нужен своей семье – тем людям, которые будут тебя любить, несмотря ни на какие минусы. Они всегда примут и простят.
+                    .post-footer
+                      .likes-icon-inner: a(href="#") 250
+                      .comments-icon-inner: a(href="#") 12
+                      .shares-icon-inner: a(href="#") 234
+                .profile-user-wall-item
+                  .group-post
+                    .date 7 дней назад:
+                    .post-header
+                      .icon: a(href="#" style="background-image: url(../images/content/user-icon-large.png)")
+                      .info
+                        a(href="#").author-post Жанар Дугалова
+                        span добавила новую аудиозапись:
+                    .post-body
+                      .type-icon.audio: a(href="#")
+                      .audio-post
+                        article
+                          #mediawrapper
+                            audio(id="mejs" type="audio/mp3" controls="controls")
+                              Source(src="../mp3/5.mp3" title="Air Review - Chasing Corporate")
+                    .post-footer
+                      .likes-icon-inner: a(href="#") 250
+                      .comments-icon-inner: a(href="#") 12
+                      .shares-icon-inner: a(href="#") 234
+      include includes/fixed-nav
+    include includes/scripts

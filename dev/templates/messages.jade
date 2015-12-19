@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    title Диалоги
+    include includes/head
+  body
+    .container
+      include includes/header
+      main
+        section.content
+          .profile
+            .profile-menu
+              ul
+                li: a(href="#").icon.messages Мои сообщения
+                li: a(href="#").icon.friends Мои друзья
+                li: a(href="#").icon.blog Мой блог
+                li: a(href="#").icon.images Мои фотоальбомы
+                li: a(href="#").icon.videos Мои видеозаписи
+                li: a(href="#").icon.audios Мои аудиозаписи
+                li: a(href="#").icon.pref Настройка профиля
+            .profile-messages
+              .messages-search
+                form
+                  label Диалоги
+                  .input
+                    input(class="inp-text" type="text" placeholder="поиск сообщений или собеседников")
+                    input(class="inp-submit" type="submit")
+              .messages-list
+                a(href="#" class="messages-item new")
+                  .user.busy
+                    span(style="background-image: url(../images/content/userpics/4.png)")
+                  .header
+                    .user-name Камшат Жолдыбаева
+                    .msg-date 15 минут
+                  .msg Вчера был феерический концерт. Жаль, тебя не было :(
+                  .msg-c 3
+                a(href="#" class="messages-item new")
+                  .user.online
+                    span(style="background-image: url(../images/content/userpics/2.png)")
+                  .header
+                    .user-name Айдана Меденова
+                    .msg-date 2 часа
+                  .msg Завтра важная встреча. Не забудь! ;)
+                  .msg-c 4
+                a(href="#" class="messages-item")
+                  .user.online
+                    span(style="background-image: url(../images/content/userpics/3.png)")
+                  .header
+                    .user-name Айдана Меденова
+                    .msg-date вчера в 22:47
+                  .msg В понедельник жду всех в 8:00 в студии. Без опозданий!
+                a(href="#" class="messages-item")
+                  .user.online
+                    span(style="background-image: url(../images/content/userpics/1.png)")
+                  .header
+                    .user-name Айдана Меденова
+                    .msg-date вчера в 14:46
+                  .msg В связи с дождем завтрашние съемки отменяются.
+
+
+
+
+      include includes/fixed-nav
+    include includes/scripts

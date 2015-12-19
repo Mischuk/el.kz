@@ -1,0 +1,236 @@
+doctype html
+html
+  head
+    title Редактирование профиля
+    include includes/head
+  body
+    .container
+      include includes/header
+      main
+        //- a(href="#").desktop-version ПЕРЕЙТИ НА ПОЛНУЮ ВЕРСИЮ САЙТА
+        section.content
+          .profile
+            .profile-menu
+              ul
+                li: a(href="#").icon.messages Мои сообщения
+                li: a(href="#").icon.friends Мои друзья
+                li: a(href="#").icon.blog Мой блог
+                li: a(href="#").icon.images Мои фотоальбомы
+                li: a(href="#").icon.videos Мои видеозаписи
+                li: a(href="#").icon.audios Мои аудиозаписи
+                li: a(href="#").icon.pref Настройка профиля
+            .profile-preferences
+              .wrap
+                .large-form
+                  form
+                    .f-group
+                      .form-headling Основная информация
+                      .field
+                        label Имя:
+                        .input: input(type='text')
+                      .field
+                        label Фамилия:
+                        .input: input(type='text')
+                      .field
+                        label E-mail:
+                        .input: input(type='text')
+                      .field
+                        label Пол:
+                        .input
+                          label.radio-custom
+                            input(name="preferences[gender]" type="radio" value="male")
+                            span.icon
+                            span.text мужской
+                          label.radio-custom
+                            input(name="preferences[gender]" type="radio" value="female")
+                            span.icon
+                            span.text женский
+                      .field
+                        label Пароль:
+                        .input: input(type='password')
+                      .field
+                        label Подтвердите пароль:
+                        .input: input(type='password')
+                      .form-headling Дополнительная информация
+                      .field
+                        label Дата рождения:
+                        .input
+                          .select.day
+                            select
+                              option(value="") 1
+                              option(value="") 2
+                              option(value="") 3
+                              option(value="") 4
+                              option(value="") 5
+                              option(value="") 6
+                              option(value="") 7
+                              option(value="") 8
+                              option(value="") 9
+                              option(value="") 10
+                              option(value="") 11
+                              option(value="") 12
+                              option(value="") 13
+                              option(value="") 14
+                              option(value="") 15
+                              option(value="") 16
+                              option(value="") 17
+                              option(value="") 18
+                              option(value="") 19
+                              option(value="") 20
+                              option(value="") 21
+                              option(value="") 22
+                              option(value="") 23
+                              option(value="") 24
+                              option(value="") 25
+                              option(value="") 26
+                              option(value="") 27
+                              option(value="") 28
+                              option(value="") 29
+                              option(value="") 30
+                              option(value="") 31
+                          .select.month
+                            select
+                              option январь
+                              option февраль
+                              option март
+                              option апрель
+                              option май
+                              option июнь
+                              option июль
+                              option август
+                              option сентябрь
+                              option октябрь
+                              option ноябрь
+                              option декабрь
+                          .select.year
+                            select
+                              option 1970
+                              option 1971
+                              option 1972
+                              option 1973
+                              option 1974
+                              option 1975
+                              option 1976
+                              option 1977
+                              option 1978
+                              option 1979
+                              option 1980
+                              option 1981
+                              option 1982
+                              option 1983
+                              option 1984
+                              option 1985
+                              option 1986
+                              option 1987
+                              option 1988
+                              option 1989
+                              option 1991
+                              option 1992
+                              option 1993
+                              option 1994
+                              option 1995
+                              option 1996
+                              option 1997
+                              option 1998
+                              option 1999
+                              option 2000
+                              option 2001
+                              option 2002
+                              option 2003
+                              option 2004
+                              option 2005
+                              option 2006
+                              option 2007
+                              option 2008
+                              option 2009
+                              option 2010
+                      .field
+                        label Местожительства:
+                        .input
+                          .select.country
+                            select
+                              option Казахстан
+                              option Россия
+                              option Украина
+                          .select.city
+                            select
+                              option Астана
+                              option Город 1
+                              option Город 2
+                              option Город 3
+                      .field
+                        label Семейное положение:
+                        .input
+                          .select.full
+                            select
+                              option Не женат
+                              option Женат
+                              option Обручен
+                      .form-headling Образование
+                      .field
+                        label Уровень:
+                        .input
+                          .select.full
+                            select
+                              option высшее
+                              option высшее неоконченное
+                              option среднее
+                      .field
+                        label Учебное заведение:
+                        .input
+                          .select.full
+                            select
+                              option не выбрано
+                              option ВУЗ №1
+                              option ВУЗ №2
+                      .field
+                        label Факультет:
+                        .input
+                          .select.full
+                            select
+                              option не выбрано
+                              option Факультет №1
+                              option Факультет №2
+                      .field
+                        label Специальность:
+                        .input
+                          .select.full
+                            select
+                              option не выбрано
+                              option Специальность №1
+                              option Специальность №2
+                      .field
+                        label Год окончания:
+                        .input
+                          .select.full
+                            select
+                              option не выбрано
+                              option 2015
+                              option 2014
+                              option 2013
+                              option 2012
+                              option 2011
+                              option 2010
+                              option 2009
+                              option 2008
+                              option 2007
+                              option 2006
+                              option 2005
+                      .field
+                        .add-field: a(href="#") Добавить учебное заведение
+                      .form-headling Карьера
+                      .field.medium-width
+                        label Место работы:
+                        .input
+                          input(type="text")
+                      .field.medium-width
+                        label Должность:
+                        .input
+                          input(type="text")
+                      .field
+                        .add-field: a(href="#") Добавить место работы
+                      .field
+                        .input
+                          input.submit.button(type='submit', value='Сохранить')
+      include includes/fixed-nav
+    include includes/scripts

@@ -5,7 +5,9 @@
   cursor pointer
   display inline-block
   position relative
-  border 1px solid #ccc
+  width 170px
+  height 24px
+  line-height 20px
 .styledSelect
    position absolute
    top 0
@@ -13,19 +15,24 @@
    bottom 0
    left 0
    background-color white
-   padding 0 10px
-   font-weight bold
+   padding-top 0
+   padding-bottom 0
+   padding-left 15px
+   padding-right 30px
+   font-size 12px
+   border 1px solid #a1dab2
    &:after
      content ""
-     width 0
-     height 0
-     border 5px solid transparent
-     border-color black transparent transparent transparent
+     background: url('../images/sprite.png') no-repeat -159px -9px;
+     width: 11px;
+     height: 4px;
      position absolute
      top 9px
      right 6px
-.styledSelect:active, .styledSelect.active
+.styledSelect:active,
+.styledSelect.active
   background-color #eee
+  border-color $green
 .options
   display none
   position absolute
@@ -36,12 +43,14 @@
   margin 0
   padding 0
   list-style none
-  border 1px solid #ccc
+  border 1px solid $green
   background-color white
+  border-top none
   li
     padding 0 6px
     margin 0 0
-    padding 0 10px
+    padding 0 15px
+    font-size 12px
     &:hover
-      background-color #39f
+      background-color $green
       color white

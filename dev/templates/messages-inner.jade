@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title Диалоги
+    include includes/head
+  body
+    .container
+      include includes/header
+      main
+        section.content
+          .profile
+            .profile-menu
+              ul
+                li: a(href="#").icon.messages Мои сообщения
+                li: a(href="#").icon.friends Мои друзья
+                li: a(href="#").icon.blog Мой блог
+                li: a(href="#").icon.images Мои фотоальбомы
+                li: a(href="#").icon.videos Мои видеозаписи
+                li: a(href="#").icon.audios Мои аудиозаписи
+                li: a(href="#").icon.pref Настройка профиля
+            .profile-messages
+              .messages-header: span.online Камшат Жолдыбаева:
+              .messages-personal
+                .message.incoming
+                  .msg-wrp
+                    .user.no-pic-female
+                      a(href="#")
+                    .message-content Ура! Мое платье на завтрашнее открытие привезли, я в восторге!
+                    .message-date 17 минут назад
+                .message.coming
+                  .msg-wrp
+                    .user
+                      a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                    .message-content Уау! Так быстро. Ну-ка, покажи фотки.
+                    .message-date 15 минут назад
+                .message.incoming
+                  .msg-wrp
+                    .user.no-pic-female
+                      a(href="#")
+                    .message-content Сейчас. Погоди пять минут)
+                    .message-date 15 минут назад
+                .message.incoming
+                  .msg-wrp
+                    .user.no-pic-female
+                      a(href="#")
+                    .message-content
+                      | Вот! ^^)
+                      .attached
+                        a(href="../images/content/message.png" class="attached-image"): img(src="../images/content/message.png", alt="")
+                    .message-date 10 минут назад
+                .message.coming
+                  .msg-wrp
+                    .user
+                      a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                    .message-content Шикарное! Ты просто красавица! :*
+                    .message-date 9 минут назад
+              .messages-typing Камшат Жолдыбаева печатает
+              .messages-input
+                .textarea: textarea(placeholder="Введите сообщение")
+                .submit
+                  .upload-file
+                    span
+                    input(type="file")
+                  .send: a(href="#") Отправить
+      include includes/fixed-nav
+    include includes/scripts

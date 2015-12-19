@@ -5,6 +5,8 @@ html
   color $black
   font-family 'Ubuntu', serif
   font(400, 13px, 1)
+textarea
+  font-family 'Ubuntu', serif
 .container
   min-height 100%
 .wrapper
@@ -20,6 +22,7 @@ main
   width 100%
   .content
     margin 0 0 0 135px
+    padding-top 40px
 .fixed-nav
   position fixed
   left 0
@@ -33,9 +36,17 @@ main
   margin-left -270px
 .sidebar + main .content
   margin 0 270px 0 80px
+.sidebar + main .content .profile
+  margin-left 55px
+  .profile-main
+    padding-right 0
 .wr
   padding 0 45px
   margin-bottom 45px
+@media screen and (max-width 1300px)
+  main .content
+    margin-left 95px
+
 /*!=================
   Basic elements
 ====================*/
@@ -172,7 +183,7 @@ main
       top 50%
       margin-left -(@width/2)
       margin-top -(@height/2)
-  a
+  a, span
     display block
     width 100%
     height 100%
@@ -223,3 +234,83 @@ main
     left 0
     top 50%
     margin-top -(@height/2)
+.mobile-nav,
+.mobile-menu-trigger,
+.calendar-trigger,
+.lead-tabs-mobile-triggers,
+.desktop-version
+  display none
+.viewed-icon-inner:after
+  content ''
+  position absolute
+  left 0
+  top 50%
+  background: url('../images/sprite.png') no-repeat -148px -75px;
+  width: 14px;
+  height: 10px;
+  margin-top -(@height/2)
+.comments-icon-inner a:after
+  content ''
+  position absolute
+  left -20px
+  top 50%
+  background: url('../images/sprite.png') no-repeat -168px -75px;
+  width: 14px;
+  height: 12px;
+  margin-top -(@height/2)
+.likes-icon-inner a:after
+  content ''
+  position absolute
+  left -20px
+  top 50%
+  background: url('../images/sprite.png') no-repeat -188px -75px;
+  width: 14px;
+  height: 12px;
+  margin-top -(@height/2)
+.shares-icon-inner a:after
+  content ''
+  position absolute
+  left -20px
+  top 50%
+  background: url('../images/sprite.png') no-repeat -231px -75px;
+  width: 14px;
+  height: 14px;
+  margin-top -(@height/2)
+.upload-file
+  width 140px
+  height 30px
+  line-height 28px
+  overflow hidden
+  background-color #fff
+  position relative
+  border-radius 5px
+  border 1px solid #cbcbcb
+  anim()
+  &:hover
+    background-color #4eba6f
+    border-color #4eba6f
+  &:after
+    content ''
+    background url('../images/sprite.png') no-repeat -171px -24px;
+    width: 14px;
+    height: 14px;
+    position absolute
+    left 20px
+    top 50%
+    margin-top -(@height/2)
+  span
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    display inline-block
+    padding-left 40px
+  input
+    opacity 0 !important
+    display block !important
+    width 140px !important
+    height 30px !important
+    overflow hidden !important
+
+

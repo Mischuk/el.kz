@@ -1,0 +1,42 @@
+.audio-pl
+  .item
+    position relative
+    height 40px
+    width 100%
+    padding-left 25px
+    padding-right 25px
+    .play
+      position relative
+      z-index 10
+    &.current
+      background-color #dcf6e4
+      height 60px
+      .title
+        line-height 1
+        padding-left 10px
+    > div:first-child
+      padding-top 10px
+    .audio-prev-button,
+    .audio-next-button
+      margin-right 10px
+      position relative
+      top 2px
+    .player
+      position absolute
+      left 0
+      padding-left 25px
+      padding-right 25px
+      bottom 20px
+      width 100%
+      height 5px
+    .title
+      color #082e41
+      font-size 12px
+      line-height 15px
+      vertical-align middle
+      padding-left 30px
+      cursor default
+  .duration
+    display none
+.audio-pl.blue .item.current
+  background-color #ebf5fb

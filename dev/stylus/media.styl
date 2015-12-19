@@ -1,47 +1,68 @@
+@media screen and (max-height 800px)
+  .fixed-nav
+    > ul > li
+      height 45px
+      > a
+        border-bottom none
+    li ul a
+      padding 5px 50px
+      &:after
+        left 20px
+@media screen and (max-height 420px)
+  .profile-menu
+    top 0 !important
+    position absolute !important
 @media screen and (max-width 1300px)
   header
     padding-left 95px
+    .logo
+      width 180px
     .lang
       width 80px
-    .current-lang .title
-      display none
-  .main-search .search
-    margin-left 260px
-    margin-right 480px
-  header .lang .current-lang:after
-    right -5px
-  header .lang .current-lang
-    padding-right 0
-  header .logo
-    width 180px
+      .current-lang
+        padding-right 0
+        &:after
+          right -5px
+    .current-lang
+      .title
+        display none
+
+  .main-search
+    .search
+      margin-left 260px
+      margin-right 480px
   .l-wrap
     width 260px
-  .user-panel .user-profile .user-icon
-    left 15px
-  .user-panel .user-profile
-    padding-left 70px
-    border-right none
-    width 210px
-  .user-panel .user-profile .user-logout
-    left 70px
   .user-panel
     width 480px
     margin-left -480px
+    .user-profile
+      padding-left 70px
+      width 210px
+      .user-icon
+        left 15px
+      .user-logout
+        left 70px
+
   .w1280
-    .lead-news .news-item
-      width 100%
-      smooth()
-    .my-flipster ul
-      height auto !important
-      transform translateX(0) !important
-      clearfix()
-      li
-        height 200px
-        float left
-        margin 0 !important
+    .lead-news
+      .news-item
+        width 100%
+        smooth()
+    .my-flipster
+      ul
+        height auto !important
+        transform translateX(0) !important
+        clearfix()
+        li
+          height 200px
+          float left
+          margin 0 !important
+
   .lead-calendar
     display block
-  .our-projects
+  .our-projects,
+  .sidebar .playlist
     display none
   .wr
     padding-left 15px
@@ -50,49 +71,157 @@
     font-size 24px
     span
       font-size 16px
-  .lead-articles .list, .lead-blogs .list
-    padding-right 5px
-  .sidebar .playlist
-    display none
-  .search form
-    padding-left 10px
-    padding-right 35px
-  .search .inp-submit
-    right 10px
-    width 18px
-  .search .inp-text
-    padding-left 5px
-    padding-right 5px
+  .lead-articles,
+  .lead-blogs
+    .list
+      padding-right 5px
 
+  .search
+    form
+      padding-left 10px
+      padding-right 35px
+      .inp-submit
+        right 10px
+        width 18px
+      .inp-text
+        padding-left 5px
+        padding-right 5px
+  .large-form .f-group
+    padding-left 10px
+    padding-right 10px
+    padding-top 10px
+  .large-form .field > label
+    display block
+    text-align left
+    margin-bottom 5px
+  .f-group .field
+    width 380px
+    margin 0 auto 20px auto
+  .large-form .input
+    margin-left 0
+  .large-form input.submit
+    margin-left 209px
+  #form-signup_v2 .submit
+    margin-left 260px
+  .profile-menu
+    left -15px
+    width 275px
+  .profile
+    padding-left 260px
+  .add-field
+    width 100%
+  .profile-main
+    padding-right 0
+  .profile-user-wall
+    padding-left 15px
+    padding-right 15px
+  .profile-user-wall-item .community-lead .intro
+    padding-right 0
+  .sidebar + main .content .profile
+    margin-left 15px
+  .profile-articles .user-comments .header .custom-select
+    display none
+  .spec-projects .projects-list
+    padding-right 15px
+  .spec-projects .lead-image
+    left -15px
+  .articles-list
+    padding-left 15px
+  .large-audio .mejs-nexttrack-button
+    left auto
+    right 5px
+    top 5px
+  .large-audio .mejs-playpause-button
+    left auto
+    right 35px
+    top 0px
+  .large-audio .mejs-prevtrack-button
+    left auto
+    top 5px
+    right 75px
+  .large-audio .mejs-currenttime-container, .large-audio .mejs-duration-container
+    top 45px
+@media screen and (max-width 1200px)
+  .profile-images .item:nth-child(3n+1)
+    margin-left 4%
+    clear none
+  .profile-images .item
+    width 48%
+    &:nth-child(2n+1)
+      margin-left 0
+      clear left
+  .images-albums
+    .item
+      width 31.3%
+      &:nth-child(4n+1)
+        margin-left 3%
+        clear none
+      &:nth-child(3n+1)
+        margin-left 0
+        clear left
 @media screen and (max-width 1024px)
-  .user-panel .user-options
-    width 230px
   .user-panel
     width 441px
     margin-left -441px
+    .user-options
+      width 230px
   .main-search .search
     margin-right 440px
     margin-left 240px
   header .lang
     width 60px
-@media screen and (max-width 960px)
+  .profile-menu
+    width 255px
+  .profile
+    padding-left 240px
   .sidebar
+    width 231px
+    margin-left -231px
+  .sidebar + main .content
+    margin-right 231px
+  .sidebar .sidebar-groups .join a
+    width 94%
+  .sidebar-users,
+  .sidebar-groups .list
+    padding 0 15px
+  .courses .item
+    width 100%
+    margin-left 0
+  .spec-projects .projects-list .item
+    width 31.3%
+    margin-left 3%
+    &:nth-child(4n+1)
+      margin-left 3%
+      clear none
+    &:nth-child(3n+1)
+      margin-left 0
+      clear left
+  .spec-projects .lead-image h1,
+  .spec-projects .lead-image .title
+    padding-left 5%
+@media screen and (max-width 960px)
+  .content.full
+    margin-left 0
+  .sidebar,
+  .fixed-nav,
+  .main-search
     display none
+  .mobile-nav,
+  .content .sidebar-groups
+    display block
   .sidebar + main .content
     margin-right 0
     margin-left 0
+  main .content
+    padding-top 0
+  .content .sidebar-groups
+    padding-bottom 20px
   .my-flipster li .description
     left 0
     padding-left 20px
-  .fixed-nav
-    display none
-  header
-    padding-left 0
-    padding-right 70px
-  .main-search
-    display none
-  .mobile-nav
-    display block
+  .container
+    padding-top 70px
+
   .user-panel,
   .l-wrap
     margin 0
@@ -106,7 +235,7 @@
     box-shadow 2px 3px 2px -1px $black-rgba
   .user-panel
     top 70px
-    height 155px
+    height 70px
     .user-profile
       height 70px
       width 100%
@@ -117,15 +246,18 @@
       float none
       border-top 1px solid $gray-bd
       border-bottom 1px solid $gray-bd
-
       padding-bottom 15px
+      display none
   .mobile-nav
-    top 207px
+    top 137px
+    border-top 1px solid $gray-bd
     > ul > li > ul
       display none
+    ul
+      clearfix()
     li
-      width 33.333%
-      height 76px
+      width 100%
+      height 35px
       float left
       border 1px solid $gray-bd
       border-top none
@@ -143,67 +275,81 @@
       display block
       width 100%
       height 100%
-      padding-top 55px
+      padding-top 0
+      line-height 33px
+      text-align left
+      padding-left 60px
     .ico:after
       content ''
       position absolute
-      left 50%
-      top 10px
+      left 25px
+      top 50%
     .ico-home:after
       background: url('../images/sprite.png') no-repeat -1px -180px;
       width: 27px;
       height: 26px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-personal:after
       background: url('../images/sprite.png') no-repeat -35px -180px;
       width: 30px;
       height: 20px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-knowledge:after
       background: url('../images/sprite.png') no-repeat -73px -180px;
       width: 31px;
       height: 25px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-projects:after
       background: url('../images/sprite.png') no-repeat -114px -180px;
       width: 30px;
       height: 29px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-articles:after
       background: url('../images/sprite.png') no-repeat -151px -180px;
       width: 27px;
       height: 28px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-community:after
       background: url('../images/sprite.png') no-repeat -186px -180px;
       width: 31px;
       height: 28px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-blog:after
       background: url('../images/sprite.png') no-repeat -224px -180px;
       width: 26px;
       height: 30px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-video:after
       background: url('../images/sprite.png') no-repeat -260px -180px;
       width: 35px;
       height: 24px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-audio:after
       background: url('../images/sprite.png') no-repeat -305px -180px;
       width: 30px;
       height: 27px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-images:after
       background: url('../images/sprite.png') no-repeat -345px -180px;
       width: 30px;
       height: 22px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     .ico-apps:after
       background: url('../images/sprite.png') no-repeat -382px -180px;
       width: 32px;
       height: 24px;
       margin-left -(@width/2)
+      margin-top -(@height/2)
     a:hover
       background-color $black
       color #fff
@@ -227,24 +373,141 @@
     transform translateX(-105%)
     &.show
       transform translateX(0)
-  header .lang
-    position absolute
-    right 0
+  header
+    padding-left 0
+    padding-right 70px
+    position fixed
+    left 0
     top 0
-    width 70px
-    height 70px
-    border-left 1px solid $gray-bd
-  header .lang .button-dropdown .dropdown
-    left auto
-    right -19px
-  header .logo
-    border-right none
+    width 100%
+    z-index 50
+    border-bottom 1px solid $gray-bd
+    box-shadow 0 0 1px 1px rgba(0,0,0,.125)
+    .lang
+      position absolute
+      right 0
+      top 0
+      width 70px
+      height 70px
+      border-left 1px solid $gray-bd
+      .button-dropdown .dropdown
+        left auto
+        right -19px
+    .logo
+      border-right none
   .l-wrap
     width 100%
     .logo
       width 100%
       a
         margin 8px auto 8px
+  .group-list
+    padding-top 40px
+  .content
+    .user-profile
+      position relative
+      height 70px
+      line-height 70px
+      clearfix()
+      border-top 1px solid $gray-bd
+      border-bottom 1px solid $gray-bd
+      > div
+        display inline-block
+        vertical-align top
+      .info
+        float right
+        height 70px
+        margin-bottom 0
+      .socials
+        display none
+        vertical-align top
+        a
+          vertical-align middle
+      .join
+        position absolute
+        left 15px
+        bottom -70px
+        margin-bottom 0
+        vertical-align top
+        width 250px
+      .rating
+        margin 0
+        vertical-align top
+        span
+          vertical-align middle
+      .lead
+        margin-bottom 0
+        height 100%
+        vertical-align top
+        line-height 70px
+        margin-right 10px
+        .lead0-title
+          display inline-block
+          vertical-align middle
+  main .content
+    margin-left 0
+  .signup
+    padding-left 69px
+    padding-right 69px
+    padding-top 40px
+  .profile
+    margin-top 0
+    padding-left 70px
+  .profile-menu
+    position fixed
+    width 70px
+    left 0
+    top 70px
+    li a
+      position relative
+      text-indent -9999px
+      padding-left 0
+    .icon:after
+      left 50%
+      margin-left -10px
+  .new-user-options a
+    text-indent -9999px
+    margin 0
+    height 50px
+    border none !important
+    padding-left 0 !important
+    width 100%
+    anim()
+    &:hover
+      background-color #ebf5fb
+  .add-friend,
+  .add-message
+    border-top 1px solid $gray-bd
+  .new-user-options .add-friend a:after,
+  .new-user-options .add-message a:after
+    left 50%
+    margin-left -8px
+  .profile-lead
+    display none
+  .profile-main
+    .profile-lead
+      display block
+  .sidebar + main .content .profile
+    margin-left 0
+  .profile-articles .total-post
+    padding-top 0
+  .profile-articles .user-comments .header .custom-select
+    display block
+  .profile-articles .post-comment form .upload-file
+    margin-right auto
+  .spec-projects .projects-list
+    padding-left 15px
+  .spec-projects .custom-select
+    padding-left 15px
+  .spec-projects .lead-image
+    left 0
+  .images-albums
+    .headling
+      margin-top 30px
+@media screen and (max-width 700px)
+  .video-player,
+  .video-lead .wrp
+    width 100% !important
 @media screen and (max-width 640px)
   .lead-image
     height 230px
@@ -254,42 +517,54 @@
     span
       display table-cell
       vertical-align middle
-  .lead-news .news-item .image
-    background-position 0% 25%
-  .lead-news .news-item .tag
-    min-height 42px
-    line-height 42px
-  main .headling
-    font-size 30px
-  .owl-prev,
-  .owl-next
-    width 36px
-    height 36px
-    top -60px
-  .owl-prev
-    right 45px
-  .lead-news .news-item
-    margin-bottom 0
-    height 205px
-    overflow hidden
   .lead-news
     .single-carousel
       opacity 0
       anim()
       &.owl-loaded
         opacity 1
-  .lead-calendar .calendar-events
-    width 100%
-    padding-left 0
-  .lead-calendar .calendar
-    position relative
-    width 100%
-    .datepicker-inline
-      padding-left 120px
+    .news-item
+      margin-bottom 0
+      height 205px
+      overflow hidden
+      .image
+        background-position 0% 25%
+      .tag
+        min-height 42px
+        line-height 42px
+      .title
+        font-size 24px
+        font-weight normal
+  main .headling
+    font-size 30px
+  .owl-prev,
+  .owl-next
+    width 36px
+    height 36px
+    top -30px
+  .owl-carousel
+    padding-top 30px
+  .owl-prev
+    right 45px
+  .lead-calendar
+    .calendar-events
+      width 100%
+      padding-left 0
+    .calendar
+      position relative
+      width 100%
+      .datepicker-inline
+        padding-left 120px
   .datepicker--nav
     padding 20px
-  .datepicker--content
+  .datepicker--content,
+  .lead-photos,
+  .lead-blogs,
+  .group-post .post-body .edit:before,
+  .group-post .post-body .edit:after
     display none
+  .profile-images .lead-photos
+    display block
   .calendar
     margin-bottom 30px
   .calendar-trigger
@@ -312,54 +587,43 @@
     font-size 24px
   .my-flipster li
     width 100%
-  .my-flipster li .description p
-    font-size 59px
-    span
-      font-size 36px
-  .lead-photos
-    display none
-  .lead-video .item .title
-    font-size 30px
-    font-weight 500
-  .lead-video .item .image
-    height 310px
-  .lead-video .item .footer
-    height 60px
-    line-height 60px
-    top 250px
-  .lead-news .news-item .title
-    font-size 24px
-    font-weight normal
-  .lead-video .item .footer
-    font-size 24px
-    .viewed-icon:after
-      background: url('../images/sprite.png') no-repeat -454px -327px;
-      width: 38px;
-      height: 22px;
-      margin-top -(@height/2)
-    .viewed-icon
-      padding-left 45px
-    .comments-icon:after
-      background: url('../images/sprite.png') no-repeat -424px -327px;
-      width: 25px;
-      height: 24px;
-      margin-top -(@height/2)
-    .comments-icon,
-    .likes-icon
-      padding-left 35px
-    .likes-icon:after
-      background: url('../images/sprite.png') no-repeat -385px -327px;
-      width: 29px;
-      height: 24px;
-      margin-top -(@height/2)
-  .lead-review .item .image
-    height 130px
+    .description p
+      font-size 59px
+      span
+        font-size 36px
+  .lead-video
+    .item
+      .title
+        font-size 30px
+        font-weight 500
+      .image
+        height 310px
+      .footer
+        height 60px
+        line-height 60px
+        top 250px
+        font-size 24px
+        .viewed-icon:after
+          background: url('../images/sprite.png') no-repeat -454px -327px;
+          width: 38px;
+          height: 22px;
+          margin-top -(@height/2)
+        .viewed-icon
+          padding-left 45px
+        .comments-icon:after
+          background: url('../images/sprite.png') no-repeat -424px -327px;
+          width: 25px;
+          height: 24px;
+          margin-top -(@height/2)
+        .comments-icon,
+        .likes-icon
+          padding-left 35px
+        .likes-icon:after
+          background: url('../images/sprite.png') no-repeat -385px -327px;
+          width: 29px;
+          height: 24px;
+          margin-top -(@height/2)
   .lead-review
-    .user
-      width 110px
-      height 110px
-      a
-        background-size cover
     .item
       height auto
       padding-bottom 35px
@@ -369,23 +633,51 @@
         font-weight normal
         max-height 1000px
         padding-top 25px
-  .lead-review .item .user-details .user-name
-    font-size 24px
-    top 20px
-    font-weight 500
-  .lead-review .item .footer
-    display none
-  .lead-review .item .user-details
-    top 75px
+      .image
+        height 130px
+      .user-details
+         top 75px
+        .user-name
+          font-size 24px
+          top 20px
+          font-weight 500
+      .footer
+        display none
+    .user
+      width 110px
+      height 110px
+      a
+        background-size cover
+
+  .lead-articles,
+  .lead-blogs
+    width 100%
+    .header
+      position static
+      margin-bottom 50px
+      margin-top 25px
+      span
+        a
+          width 140px
+          height 50px
+          line-height 46px
+          display inline-block
+          font-size 24px
+          font-weight 500
+          text-align center
+          border-radius 10px
+          &.current
+            border 2px solid $violet
+            background-color #e7e5f5
+    .headling
+      display none
+    .item
+      a
+        p
+          font-size 24px
+          font-weight 400
   .lead-tabs-mobile-triggers
     display block
-  .lead-articles, .lead-blogs
-    width 100%
-  .lead-articles .header, .lead-blogs .header
-    position static
-  .lead-blogs
-    display none
-  .lead-tabs-mobile-triggers
     height 90px
     line-height 90px
     width 100%
@@ -404,30 +696,7 @@
       background: -moz-linear-gradient(top,  #897dcd 0%, #ffffff 60%);
       background: -webkit-linear-gradient(top,  #897dcd 0%,#ffffff 60%);
       background: linear-gradient(to bottom,  #897dcd 0%,#ffffff 60%);
-  .lead-articles, .lead-blogs
-    .headling
-      display none
-  .lead-articles .header,
-  .lead-blogs .header
-    margin-bottom 50px
-    margin-top 25px
-  .lead-articles .header span a,
-  .lead-blogs .header span a
-    width 140px
-    height 50px
-    line-height 46px
-    display inline-block
-    font-size 24px
-    font-weight 500
-    text-align center
-    border-radius 10px
-  .lead-articles .header span a.current, .lead-blogs .header span a.current
-    border 2px solid $violet
-    background-color #e7e5f5
-  .lead-articles .item a p,
-  .lead-blogs .item a p
-    font-size 24px
-    font-weight 400
+
   .lead-tabs
     .footer
       font-size 24px
@@ -471,11 +740,117 @@
     width 100%
     text-align center
     anim()
+    z-index 10
   main
     position relative
-    padding-bottom 90px
   header .lang
     z-index 40
+  .group-post
+    .post-body
+      padding-left 0
+      .edit
+        left auto
+        right 0
+      article
+        padding 20px
+  .group-post
+    .post-header
+      position relative
+      .info
+        position absolute
+        left 0
+        padding-left 60px
+        padding-top 10px
+        top 0
+        width 100%
+        line-height 1
+        height 100%
+  .article-list
+    width 100%
+    padding 20px
+  .user-comments
+    .headling
+      font-size 18px
+      padding-right 0
+    .header
+      .custom-select
+        margin-left 10px
+        float right
+  .group-post .post-body .type-icon
+    display none
+  .profile-user-wall-item .community-lead
+    margin-left 0
+  .profile-user-wall-item .community-lead .image
+    float none
+    width 100%
+    img
+      width 100%
+      height auto
+  .profile-user-wall-item .community-lead .intro
+    padding-left 0
+    margin-top 20px
+  .group-post .post-body
+    margin-bottom 10px
+  .profile-user-wall-item .link .user
+    margin-left 55px
+  .profile-user-wall-item .link .user-name
+    left 125px
+  .group-post .post-header
+    margin-bottom 10px
+  .profile-user-wall-item .link
+    margin-bottom 0
+  .spec-projects .projects-list .item
+    width 48.5% !important
+    margin-left 3% !important
+    &:nth-child(3n+1)
+      margin-left 3% !important
+      clear none !important
+    &:nth-child(2n+1)
+      margin-left 0 !important
+      clear left !important
+  .articles-blog .group-list .item
+    width 100% !important
+    margin-left 0 !important
+  .images-albums
+    .headling
+      font-size 18px
+    .lead-photos
+      display block
+      .item
+        width 48.5%
+        &:nth-child(3n+1)
+          margin-left 3%
+          clear none
+        &:nth-child(2n+1)
+          margin-left 0
+          clear left
+@media screen and (max-width 568px)
+  .signup
+    padding-left 0
+    padding-right 0
+    .wrap
+      border none
+  .messages-item
+    height 114px
+    .msg-c
+      top 10px
+      right 10px
+      margin 0
+    .msg
+      max-height 62px
+  .messages-input
+    .submit
+      padding 0
+      width 200px
+      .send
+        margin-left 10px
+    .textarea
+      padding-right 200px
+      textarea
+        padding 10px
+  .image-slider-footer .share
+    width 100%
+    margin-top 10px
 @media screen and (max-width 540px)
   main .headling
     padding-right 90px
@@ -486,14 +861,16 @@
   .lead-news .news-item .title,
   .lead-review .item p,
   .lead-calendar .calendar-events .title,
-  .lead-calendar .calendar-events .description
-    font-size 18px
+  .lead-calendar .calendar-events .description,
+  .lead-articles .item a p,
+  .lead-blogs .item a p
+    font-size 21px
   .lead-articles .header, .lead-blogs .header
     margin-bottom 15px
-  header .logo a span
-    display none
   header
     padding-right 0
+    .logo a span
+      display none
   .desktop-version
     font-size 18px
     line-height 1
@@ -510,33 +887,303 @@
     padding-left 55px
   .lead-tabs-mobile-triggers a
     font-size 24px
-  .lead-articles .header span a, .lead-blogs .header span a
+  .lead-articles .header span a,
+  .lead-blogs .header span a
     width 100px
-  .lead-news .news-item
-    height 210px
-  .lead-news .news-item .image
-    position absolute
-    left 0
-    top 0
-    width 100%
-    height 100%
-    background-position 0 25px
-  .lead-news .news-item .title
-    position relative
-    z-index 10
+  .lead-news
+    .news-item
+      height 210px
+      .image
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background-position 0 25px
+      .title
+        position relative
+        z-index 10
   .lead-review .item .user-details .user-name
     position absolute
     line-height 1
     top 45px
     left 120px
-@media screen and (max-width 420px)
-  .lead-blogs .user
-    position static
-    float left
-    margin-right 10px
-  .lead-blogs .item
+  .group-post
+    .post-body
+      article
+        .attached
+          table.images,
+          tbody,
+          tr,
+          td
+            display block
+          tr
+            overflow hidden
+          td
+            width 50%
+            float left
+            .image
+              padding 5px !important
+          &.full
+            td
+              width 100%
+  .user-comments > section
+    padding 20px
+  .post-comment form .inp-text
+    margin-bottom 0
+  .post-comment form .upload-file,
+  .post-comment form .send
+    display block
+    margin 10px auto
+    width 140px
+    input
+      margin-left 0
+  .group-list
+    text-align center
+    .info
+      width 100%
+    .image
+      width 100%
+      margin-right 0
+      margin-bottom 3%
+  .f-group .field
+    position relative
+    width 100%
+  .large-form
+    .upload-file,
+    .input
+      width 100%
+      input
+        max-width 100%
+    .upload-file
+      i
+        line-height 1
+      .icon-image
+        width 100%
+    .day, .month, .year
+      margin-left 2%
+    .day, .year
+      width 20%
+    .month
+      width 56%
+    .day
+      margin-left 0
+    .styledSelect
+      padding-left 5px
+    .country,
+    .city
+      width 49%
+      margin-left 2%
+    .country
+      margin-left 0
+    .full
+      width 100%
+    .form-headling
+      padding-left 10px
+      padding-right 10px
+  .add-field
+    padding-right 0
+    a
+      width 100%
+  .large-form .form-headling
+    line-height 1
+    height auto
+    padding-top 10px
+    padding-bottom 10px
+  .messages-item
     padding-left 0
-  .lead-articles .item a p, .lead-blogs .item a p
+    padding-right 10px
+    height auto
+    min-height 114px
+    max-height 150px
+    padding-bottom 20px
+    .header
+      padding-top 15px
+      padding-right 20px
+    .user
+      top 10px
+      margin-top 0
+    .msg-date
+      margin-left 0
+      display block
+    .msg
+      padding-right 0
+      max-height 1000px
+      padding-top 10px
+    .msg-c
+      right 5px
+      top 5px
+      width 20px
+      height 20px
+      line-height 18px
+    .user
+      left 10px
+  .messages-search,
+  .messages-header
+    padding-left 10px
+    padding-right 10px
+    .inp-submit
+      right 10px
+    .input
+      padding-left 0
+    label
+      display none
+  .messages-personal
+    padding-left 20px
+    padding-right 10px
+  .messages-input .textarea
+    padding-right 0
+    textarea
+      border-right none
+  .messages-input
+    height 125px
+  .messages-input .submit
+    top auto
+    bottom 10px
+    height 30px
+    line-height 30px
+    border-top none
+    padding-bottom 10px
+  .profile-user-wall-item .link .user
+    margin-left 0
+  .profile-user-wall-item .link .user-name
+    left 65px
+  .profile-add-post .submit
+    border-bottom none
+  .profile-user-info
+    padding-left 15px
+    padding-right 15px
+  .profile-user-info .quote:before,
+  .profile-user-info .quote:after,
+  .profile-user-info .gender:after,
+  .profile-user-info .age:after,
+  .profile-user-info .locate:after
+    display none
+  .toggle-info
+    width 75%
+  .profile-user-info .toggle-info a
+    display block
+    width 100%
+    &:after, &:before
+      display none
+  .profile-articles .user-comments .header .custom-select,
+  .track-dur
+    display none
+  .profile-images .item,
+  .profile-images .lead-photos.videos .item
+    width 100%
+    margin-left 0 !important
+  .friend-item
+    width 50%
+  .track-cover
+    display none
+  .large-audio .mejs-container
+    padding-left 0
+  .track-title
+    left 20px
+  .large-audio .mejs-playlist li:before
+    display none
+  .large-audio .mejs-playlist li.current
+    padding-left 50px
+  .large-audio .mejs-playlist li.current:before
+    left 0
+    display block
+  .large-audio .mejs-playlist li:after
+    bottom 10px
+@media screen and (max-width 420px)
+  .lead-blogs
+    .user
+      position static
+      float left
+      margin-right 10px
+    .item
+      padding-left 0
+  .lead-articles,
+  .lead-blogs
+    .header span
+      margin-right 5px
+  main .headling
+    font-size 24px
+  .group-post
+    .post-body
+      article
+        .attached
+          td
+            width 100%
+            float left
+            .image
+              padding 0 !important
+              height 200px !important
+              margin-bottom 20px
+  .user-comments .custom-select
+    display none !important
+  .post-comment form .inp-text
+    padding 10px 5px
+    min-height 70px
+  .post-comment,
+  .user-comments-list .item
+    padding-left 0
+    padding-top 55px
+  .content .user-profile .rating
+    display none
+  .content .user-profile .info
+    position absolute
+    right 10px
+    top -50px
+  .content .user-profile .lead
+    width 100%
+    margin-right 0
+  .content .user-profile .join
+    left 50%
+    width 250px
+    margin-left -(@width/2)
+  .large-form .day, .large-form .month, .large-form .year
+    margin-right 0
+    margin-bottom 20px
+    width 100%
+    margin-left 0
+  .messages-personal .message
+    .msg-wrp
+      padding 10px
+      display block
+      width 100%
+      margin-left 0
+      margin-right 0
+    .user
+      display none
+  .messages-personal .message.coming
+    right 10px
+    position relative
+  .messages-typing
+    padding-left 30px
+    padding-right 0
+    &:after
+      left 5px
+  .profile-articles .viewed-icon-inner
+    display none
+  .lead-article h3
     font-size 18px
-  .lead-articles .header span, .lead-blogs .header span
-    margin-right 5px
+    left 15px
+    padding-right 15px
+  .spec-projects .projects-list .item
+    width 100% !important
+    margin-left 0 !important
+    margin-bottom 15px
+  .friend-item
+    width 100%
+  .images-albums .lead-photos .item
+    width 100%
+    margin-left 0 !important
+  .image-slider-footer .date
+    width 100%
+    margin-bottom 10px
+  .image-slider .slide
+    height 240px
+  .profile-audio .large-audio .mejs-inner
+    padding-top 200px
+  .profile-audio .add-to-albums
+    right 0
+    top 150px
+  .image-slider-footer .date
+    float none
+

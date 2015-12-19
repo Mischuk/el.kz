@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    title Профиль
+    include includes/head
+  body
+    .container
+      include includes/header
+      include includes/sidebar-profile-audio
+      main
+        section.content
+          .profile.profile-audio
+            .lead-photos.images.wr
+              .profile-audio-inner
+                .add-to-favourite: a(href="#") Добавить в избранное
+                .add-to-albums: a(href="#") Альбомы
+                .track-description
+                  .track-cover(style="background-image: url(../images/content/artist.jpg)")
+                  .track-title
+                    .artist Air Review
+                    .song Chasing Corporate
+                #mediawrapper-main.large-audio
+                  audio(id="mejs-main" type="audio/mp3" controls="controls")
+                    Source(src="../mp3/8.mp3" title="<div class='track-dur'>04:02</div><b class='track-artist'>Air Review</b> - <span class='track-title-player'>Chasing Corporate</span>")
+                    Source(src="../mp3/2.mp3" title="<div class='track-dur'>03:22</div><b class='track-artist'>Air Review</b> - <span class='track-title-player'>All Because You're Mine</span>")
+                    Source(src="../mp3/3.mp3" title="<div class='track-dur'>02:33</div><b class='track-artist'>Chris</b> - <span class='track-title-player'>Chasing Cars(Cover)</span>")
+                    Source(src="../mp3/4.mp3" title="<div class='track-dur'>05:23</div><b class='track-artist'>SmallCityLights</b> - <span class='track-title-player'>New Distance</span>")
+                    Source(src="../mp3/7.mp3" title="<div class='track-dur'>06:44</div><b class='track-artist'>Jamie Ray</b> - <span class='track-title-player'>I got you</span>")
+                    Source(src="../mp3/6.mp3" title="<div class='track-dur'>03:21</div><b class='track-artist'>Chris</b> - <span class='track-title-player'>When You're Gone Cover</span>")
+            .wr
+              .audio-info
+                .tags
+                  ul
+                    li: a(href="#") #kz
+                    li: a(href="#") #музыка
+                    li: a(href="#") #КайратНуртас
+                    li: a(href="#") #НовыйАльбом2015
+                    li: a(href="#") #ҚайратНұртас
+                    li: a(href="#") #қазақәндері
+                    li: a(href="#") #azakhsongs
+                    li: a(href="#") #KairatNurtas
+                    li: a(href="#") #KN
+                    li: a(href="#") #kazakhsingers
+                    li: a(href="#") #music
+                    li: a(href="#") #popular
+                    li: a(href="#") #MUZTV
+                .image-slider-footer
+                  .details
+                    .date 11.12.2015, 02:24
+                    .posted Admin
+                    .comments-icon-inner: a(href="#") 1
+                    .viewed-icon-inner 12
+                  .share
+                    span Поделиться:
+                    a(href="#").facebook
+                    a(href="#").twitter
+                    a(href="#").youtube
+                    a(href="#").tumblr
+
+
+            .user-comments.wr
+              section
+                .header
+                  h3.headling Комментарии
+                  .custom-select
+                    select
+                      option сначала новые
+                      option сначала старые
+                .post-comment
+                  .user.online
+                    a(href="#" style="background-image: url(../images/content/user-icon.png)")
+                  form
+                    textarea.inp-text(placeholder="присоедениться к обсуждению")
+                    .bottom-form
+                      .upload-file
+                        span Прикрепить
+                        input(type="file" name="photo")
+                      .send: input(type="submit" value="Отправить").inp-submit
+                .user-comments-list
+                  .item
+                    .user.busy
+                      a(href="#" style="background-image: url(../images/content/userpics/3.png)")
+                    section
+                      .header
+                        a(href="#").user-name Батыр
+                        span.date 3 месяца назад
+                      .body Сұхбат өте өзекті мәселелер төңірегінде орбиген. Жастарды искерликке шақыратын, қалай табысқа жетугеболатынын көрсететін немесе ғылым изденуге қызықтырыпбағдарламалар керекті. Теледидар шоу бағдарламаларға толы, сондықтан жастардың кобшилиги әнші немесе шоу мен болуды армандайды. Бизде жастарға насихат жетіспеуде деп ойлаймын.
+                      .footer
+                        .like: a(href="#") 15
+                        .dislike: a(href="#") 2
+                        .share: a(href="#") 3
+      include includes/fixed-nav
+    include includes/scripts

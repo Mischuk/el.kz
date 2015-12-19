@@ -1,0 +1,113 @@
+/*
+    Document        : mep-feature-playlist.css
+    Author          : Andrew Berezovsky <andrew.berezovsky@gmail.com>
+    Original Author : Junaid Qadir Baloch <shekhanzai.baloch@gmail.com>
+*/
+
+/* Start: Show/Hide Playlist*/
+.mejs-controls .mejs-show-playlist button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+  background-position: -16px -16px;
+}
+.mejs-controls .mejs-hide-playlist button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+  background-position: -16px 0;
+}
+/* End: Show/Hide Playlist */
+
+/* Start: Previous */
+.mejs-controls .mejs-prevtrack button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+  background-position: 0 -16px;
+}
+/* End: Previous */
+
+/* Start: Next */
+.mejs-controls .mejs-nexttrack button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+}
+/* End: Next */
+
+/* Start: Shuffle */
+.mejs-controls .mejs-shuffle-on button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+  background-position: -32px 0;
+}
+.mejs-controls .mejs-shuffle-off button {
+  background: transparent url(../images/controls-playlist.png) no-repeat;
+  background-position: -32px -16px;
+}
+/* End: Shuffle */
+
+
+.mejs-playlist ul {
+  margin: 0;
+}
+.mejs-playlist li {
+  color: white;
+  font-size: 11px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/*End: Playlist*/
+#mediawrapper{
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
+}
+.mejs
+  li
+    position: relative;
+    height 40px
+    .mejs-time-rail
+      position: absolute;
+      left: 0
+    button.pp,
+    button.next,
+    button.prev
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 10px;
+      line-height: 10px;
+      background-color: red;
+      z-index: 9999;
+      border: none;
+      font-size: 8px;
+      margin:0;
+      cursor: pointer;
+    button.next,
+    button.prev
+      display none
+    button.pp{
+        left:15px;
+        height 16pxre
+        top 50%
+        margin-top -11px
+    }
+    button.prev{
+        left: 33px;
+        top 50%
+        margin-top -18px
+    }
+    button.next{
+        left: 55px;
+        top 50%
+        margin-top -18px
+    }
+    &.current button.pp,
+    &.current button.next,
+    &.current button.prev
+      display: block;
+.mejs-time-rail
+    position: absolute;
+    left:0;
+    top: 50px;
+    width 90% !important
+
+.mejs-time-total{
+    width: 100% !important;
+}
